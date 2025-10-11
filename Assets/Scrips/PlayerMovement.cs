@@ -40,4 +40,12 @@ public class PlayerMovement : MonoBehaviour
             rb.useGravity = false;
         }
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("CheckFall"))
+        {
+            rb.useGravity = true;
+        }
+    }
 }
