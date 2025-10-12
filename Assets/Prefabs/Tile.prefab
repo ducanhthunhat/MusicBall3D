@@ -119,7 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727f6cbc5f7b58043946f846e48283ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileSpeed: 2
+  tileSpeed: 3
+  moveDistance: 30
 --- !u!1 &6344375052996110147
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +133,7 @@ GameObject:
   - component: {fileID: 1527534551544170233}
   m_Layer: 0
   m_Name: CheckFall
-  m_TagString: Untagged
+  m_TagString: CheckFall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,5 +172,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.285215, y: 23.282602, z: 0.8969388}
-  m_Center: {x: -0.004508972, y: 11.141302, z: 0.0515306}
+  m_Size: {x: 10.285215, y: 23.282602, z: 0.012382507}
+  m_Center: {x: -0.004508972, y: 11.141302, z: -0.078116834}
