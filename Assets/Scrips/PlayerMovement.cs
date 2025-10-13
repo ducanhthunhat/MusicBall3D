@@ -3,7 +3,6 @@ using DG.Tweening;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float control = 5f;          // Tốc độ di chuyển ngang
     [SerializeField] private float fallDistance = 10f;    // Độ sâu khi rơi
     [SerializeField] private float fallDuration = 0.3f;   // Thời gian rơi
     [SerializeField] private float hoverOffset = 0.5f;    // Độ cao cố định khi lơ lửng

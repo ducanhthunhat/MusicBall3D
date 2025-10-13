@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727f6cbc5f7b58043946f846e48283ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileSpeed: 3
+  tileSpeed: 4
   moveDistance: 30
 --- !u!1 &6344375052996110147
 GameObject:
@@ -172,5 +172,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.285215, y: 23.282602, z: 0.012382507}
-  m_Center: {x: -0.004508972, y: 11.141302, z: -0.078116834}
+  m_Size: {x: 10.285215, y: 23.282602, z: 0.09927386}
+  m_Center: {x: -0.004508972, y: 11.141302, z: -0.12156251}
