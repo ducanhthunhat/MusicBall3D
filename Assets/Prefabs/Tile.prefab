@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSpeed: 4
-  moveDistance: 30
+  moveDistance: 20
 --- !u!1 &6344375052996110147
 GameObject:
   m_ObjectHideFlags: 0

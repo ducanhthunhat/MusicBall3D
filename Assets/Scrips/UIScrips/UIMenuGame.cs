@@ -6,7 +6,7 @@ public class UIMenuGame : UICanvas
 {
     public void playGame()
     {
-        UIManager.Instance.OpenUI<UIGamePlay>();
-        UIManager.Instance.CloseUI<UIMenuGame>(0.5f);
+        UIManager.Instance.CloseUIDirectly<UIMenuGame>();
+        UIManager.Instance.OpenUI<UIStartPanel>();
     }
 }

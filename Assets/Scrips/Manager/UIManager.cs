@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : Singleton<UIManager>
 {
@@ -25,7 +26,7 @@ public class UIManager : Singleton<UIManager>
             {
                 canvasGroup = canvas.gameObject.AddComponent<CanvasGroup>();
             }
-            
+
             // Khởi tạo trạng thái đóng
             canvas.gameObject.SetActive(true); // Giữ active để CanvasGroup hoạt động
             canvasGroup.alpha = 0f;
@@ -67,7 +68,7 @@ public class UIManager : Singleton<UIManager>
     {
         T canvas = GetUI<T>();
         if (canvas == null) return false;
-        
+
         CanvasGroup canvasGroup = canvas.GetComponent<CanvasGroup>();
         return canvasGroup != null && canvasGroup.alpha > 0f;
     }
@@ -76,14 +77,14 @@ public class UIManager : Singleton<UIManager>
     {
         return uiCanvases.Find(c => c is T) as T;
     }
-    
+
     /// <summary>
     /// Opens the gameplay UIs (UIGameplay, UICore) after a specified delay.
     /// </summary>
     /// <param name="delay">Time to wait in seconds before opening the UIs.</param>
-    
 
-    
+
+
     public void CloseAll()
     {
         foreach (var canvas in uiCanvases)
@@ -106,6 +107,13 @@ public class UIManager : Singleton<UIManager>
     {
         isPaused = false;
         Time.timeScale = 1;
+    }
+
+    public void ResetLevel()
+    {
+        Time.timeScale = 1f;
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 
     public void QuitGame()

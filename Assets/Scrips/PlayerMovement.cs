@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float maxX = 5f;             // Giới hạn phải
 
     private Tween currentTween;
-    private bool isFalling = false;
-    private bool isHovering = false;
 
     private Camera mainCam;
 
@@ -44,15 +42,12 @@ public class PlayerMovement : MonoBehaviour
         {
             StopTween();
 
-            isFalling = true;
-            isHovering = false;
 
             // Rơi thẳng xuống
             currentTween = transform.DOMoveY(transform.position.y - fallDistance, fallDuration)
                 .SetEase(Ease.InQuad)
                 .OnComplete(() =>
                 {
-                    isFalling = false;
                 });
         }
     }
@@ -63,8 +58,6 @@ public class PlayerMovement : MonoBehaviour
         {
             StopTween();
 
-            isHovering = true;
-            isFalling = false;
 
             // Bay nhẹ lên rồi dừng ở vị trí cố định (lơ lửng)
             float targetY = collision.contacts[0].point.y + hoverOffset;
