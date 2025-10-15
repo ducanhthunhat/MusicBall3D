@@ -10,5 +10,6 @@ public class UIStartPanel : UICanvas
         UIManager.Instance.CloseUIDirectly<UIStartPanel>();
         UIManager.Instance.OpenUI<UIPauseGame>();
         UIManager.Instance.ResumeGame();
+        BeatManager.Instance.PlayMusic();
     }
 }

@@ -100,8 +100,19 @@ public class UIManager : Singleton<UIManager>
     public void PauseGame()
     {
         isPaused = !isPaused;
-        Time.timeScale = isPaused ? 0 : 1;
+
+        if (isPaused)
+        {
+            Time.timeScale = 0;
+            BeatManager.Instance.PauseMusic();   // 🔇 Dừng nhạc
+        }
+        else
+        {
+            Time.timeScale = 1;
+            BeatManager.Instance.ResumeMusic();  // 🔊 Tiếp tục nhạc
+        }
     }
+
 
     public void ResumeGame()
     {

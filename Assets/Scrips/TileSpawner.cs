@@ -18,7 +18,6 @@ public class TileSpawner : MonoBehaviour
         }
 
         musicSource.clip = songData.songClip;
-        musicSource.Play();
     }
 
     private void Update()
