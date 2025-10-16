@@ -7,8 +7,7 @@ public class StartUI : UICanvas
 {
     public void Start()
     {
-        UIManager.Instance.OpenUI<UIMenuGame>();
-        UIManager.Instance.CloseUIDirectly<UIGameOver>();
+        UIManager.Instance.OpenUI<UIStartPanel>();
         Time.timeScale = 0;
     }
 }

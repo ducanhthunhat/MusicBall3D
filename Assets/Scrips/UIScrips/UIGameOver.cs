@@ -11,24 +11,16 @@ public class UIGameOver : UICanvas
     {
         GroundCheck.OnFall -= GameOver;
     }
-
-    void Start()
-    {
-        GameOver();
-    }
     private void GameOver()
     {
         UIManager.Instance.OpenUI<UIGameOver>();
+        UIManager.Instance.CloseUIDirectly<UIPauseGame>();
         UIManager.Instance.PauseGame();
         BeatManager.Instance.PauseMusic();
     }
 
     public void RestartGame()
     {
-        UIManager.Instance.ResumeGame();
-
-        UnityEngine.SceneManagement.SceneManager.LoadScene(
-            UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex
-        );
+        UIManager.Instance.ResetLevel();
     }
 }

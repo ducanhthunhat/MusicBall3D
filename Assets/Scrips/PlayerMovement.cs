@@ -46,9 +46,7 @@ public class PlayerMovement : MonoBehaviour
             // Rơi thẳng xuống
             currentTween = transform.DOMoveY(transform.position.y - fallDistance, fallDuration)
                 .SetEase(Ease.InQuad)
-                .OnComplete(() =>
-                {
-                });
+                .SetLink(gameObject);
         }
     }
 
