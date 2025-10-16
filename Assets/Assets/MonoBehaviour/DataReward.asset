@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632610a2636d26cf6e010e263e378f52, type: 3}
+  m_Name: DataReward
+  m_EditorClassIdentifier:
+  bgCommon: {fileID: 21300000, guid: b55095967943d0d488be52c963b8877e, type: 2}
+  bgRare: {fileID: 21300000, guid: c8c6bcc72a60ee445a8ce8e0f3c01910, type: 2}
+  bgEpic: {fileID: 21300000, guid: 272f3b64fb937f044a16d72558b1f246, type: 2}
+  bgLegendary: {fileID: 21300000, guid: 72d1a9535876bef4f8b16a2d1c71bf78, type: 2}
+  slots:
+  - rewardType: 0
+    rarity: 0
+    icon: {fileID: 21300000, guid: da9b040fbc4521242936ed5195f6b5a3, type: 2}
+    mScale: 1
+  - rewardType: 1
+    rarity: 0
+    icon: {fileID: 21300000, guid: da9b040fbc4521242936ed5195f6b5a3, type: 2}
+    mScale: 1
+  - rewardType: 2
+    rarity: 2
+    icon: {fileID: 21300000, guid: b421eece1fde10d41a7780cc82a7baa9, type: 2}
+    mScale: 1
+  - rewardType: 3
+    rarity: 0
+    icon: {fileID: 21300000, guid: 0b1bc7d1114a8f2419f1780c56a5b026, type: 2}
+    mScale: 1
+  - rewardType: 4
+    rarity: 1
+    icon: {fileID: 21300000, guid: eef8d5d62cf8b1a43a34a9ba93710632, type: 2}
+    mScale: 1
+  - rewardType: 5
+    rarity: 0
+    icon: {fileID: 21300000, guid: da9b040fbc4521242936ed5195f6b5a3, type: 2}
+    mScale: 1
+  - rewardType: 6
+    rarity: 0
+    icon: {fileID: 21300000, guid: da9b040fbc4521242936ed5195f6b5a3, type: 2}
+    mScale: 1
+  - rewardType: 7
+    rarity: 0
+    icon: {fileID: 21300000, guid: da9b040fbc4521242936ed5195f6b5a3, type: 2}
+    mScale: 1
+  - rewardType: 8
+    rarity: 1
+    icon: {fileID: 21300000, guid: b2a4f8b47e618fc4e8cf7429e48f5a09, type: 2}
+    mScale: 1
+  - rewardType: 9
+    rarity: 2
+    icon: {fileID: 21300000, guid: 75f2881731d8eec4a9e7fd88fd0361fe, type: 2}
+    mScale: 1
+  - rewardType: 10
+    rarity: 0
+    icon: {fileID: 21300000, guid: da9b040fbc4521242936ed5195f6b5a3, type: 2}
+    mScale: 1
+  mNonGray: {fileID: 2100000, guid: 7279e0666ba070a4e941bee7c33ebcf7, type: 2}
+  mIsGray: {fileID: 2100000, guid: 093dd32dfddcf6446b516ea4ae14fdac, type: 2}

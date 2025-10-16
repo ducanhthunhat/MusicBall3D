@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Stick
+  m_Shader: {fileID: 4800000, guid: f9f1813dc03c1734a955472545aed034, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _USEDEPTH_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _EmissionTexture:
+        m_Texture: {fileID: 2800000, guid: 7a870c3a876eea94383102c54cda059a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MainTexture:
+        m_Texture: {fileID: 2800000, guid: 7a870c3a876eea94383102c54cda059a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _Alpha: 1.5
+      _Blend2: 0
+      _BumpScale: 1
+      _CubeMapLevel: 1
+      _CullMode: 0
+      _Cutoff: 0.5
+      _Depthpower: 1
+      _DetailNormalMapScale: 1
+      _DistortionAmount: 0.0075
+      _DstBlend: 0
+      _EdgeOffset: -5.73
+      _EdgeSize: 0.02875557
+      _Emission: 2
+      _FLevel: 0.536
+      _FPower: 0.609
+      _FThreshole: 6.48
+      _FinalPower: 0
+      _GlossMapScale: 1
+      _Glossiness: 0.4472136
+      _GlossyReflections: 1
+      _IOR: 9.57
+      _InvFade: 1
+      _Metallic: 0
+      _Mode: 0
+      _OcclusionStrength: 1
+      _Opacity: 0.5
+      _Parallax: 0.02
+      _RimpPower: 0.74
+      _RimpThreshole: 0.47
+      _SmoothnessTextureChannel: 0
+      _SpecularHighlights: 1
+      _SrcBlend: 1
+      _UVSec: 0
+      _Usecenterglow: 0
+      _Usedepth: 1
+      _ZWrite: 1
+      __dirty: 1
+    m_Colors:
+      _Color: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 0.57254905}
+      _DistortionSpeedXYPowerZ: {r: 0, g: 0, b: 0, a: 0}
+      _EdgeColor: {r: 4, g: 2.02353, b: 0, a: 1}
+      _Emission: {r: 0, g: 0, b: 0, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _FresnelColor: {r: 1, g: 0, b: 0.7600517, a: 0}
+      _RimplightColor: {r: 1, g: 1, b: 1, a: 1}
+      _SpeedMainTexUVNoiseZW: {r: 0, g: 0, b: 0, a: 0}
+      _TintColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

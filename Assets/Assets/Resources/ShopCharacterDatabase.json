@@ -1,0 +1,116 @@
+{
+  "ShopDatabase": 
+  [
+    {
+      "ID": "BallDefault",
+      "Name": "Ball",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "BallDefault" }
+      ]
+    },
+    {
+      "ID": "Jokeball",
+      "Name": "Jokeball",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "Jokeball" },
+        { "PaymentType": "Gem", "Amount": 50 }
+      ]
+    },
+    {
+      "ID": "Sharky",
+      "Name": "Sharky",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "Sharky" },
+        { "PaymentType": "Gem", "Amount": 50 }
+      ]
+    },
+    {
+      "ID": "Dragon",
+      "Name": "Dragon",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "Dragon" },
+        { "PaymentType": "Gem", "Amount": 50 }
+      ]
+    },
+    {
+      "ID": "KingFur",
+      "Name": "King Fur",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "KingFur" },
+        { "PaymentType": "Gem", "Amount": 50 }
+      ]
+    },
+    {
+      "ID": "DiscoQueen",
+      "Name": "Disco Queen",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "DiscoQueen" }
+      ]
+    },
+    {
+      "ID": "HopInTheBox",
+      "Name": "Hop-in-the-Box",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "HopInTheBox" }
+      ]
+    },
+    {
+      "ID": "FanKenstein",
+      "Name": "Fan-kenstein",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "FanKenstein" }
+      ]
+    },
+    {
+      "ID": "StarBounce",
+      "Name": "Star Bounce",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "StarBounce" }
+      ]
+    },
+    {
+      "ID": "Deadverine",
+      "Name": "Deadverine",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "Deadverine" }
+      ]
+    },
+    {
+      "ID": "MaracasHop",
+      "Name": "Maracas Hop",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "MaracasHop" },
+        { "PaymentType": "IAP", "Amount": 0, "Metadata": "Starter Pack" }
+      ]
+    },
+    {
+      "ID": "Ballruto",
+      "Name": "Ballruto",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "Ballruto" },
+        { "PaymentType": "IAP", "Amount": 0, "Metadata": "One time offer" }
+      ]
+    },
+    {
+      "ID": "DJTHop",
+      "Name": "DJ T-Hop",
+      "Description": "",
+      "PriceOptions": [
+        { "PaymentType": "Shard", "Amount": 50, "Metadata": "DJTHop" },
+        { "PaymentType": "Event", "Amount": 0, "Metadata": "DJ" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "RanksData": [
+    {
+      "Name": "Newbie",
+      "MaxLevel": 3,
+      "BaseStats": [
+        10,
+        1,
+        1
+      ],
+      "BasePrice": 60,
+      "BaseReward": 100
+    },
+    {
+      "Name": "Amateur",
+      "MaxLevel": 5,
+      "BaseStats": [
+        20,
+        2,
+        2
+      ],
+      "BasePrice": 200,
+      "BaseReward": 250
+    },
+    {
+      "Name": "Performer",
+      "MaxLevel": 5,
+      "BaseStats": [
+        30,
+        3,
+        3
+      ],
+      "BasePrice": 650,
+      "BaseReward": 350
+    },
+    {
+      "Name": "Rising Star",
+      "MaxLevel": 5,
+      "BaseStats": [
+        40,
+        4,
+        4
+      ],
+      "BasePrice": 2000,
+      "BaseReward": 1700
+    },
+    {
+      "Name": "Maestro",
+      "MaxLevel": 10,
+      "BaseStats": [
+        50,
+        5,
+        5
+      ],
+      "BasePrice": 6500,
+      "BaseReward": 4000
+    },
+    {
+      "Name": "Legendary Musician",
+      "MaxLevel": 10,
+      "BaseStats": [
+        60,
+        6,
+        6
+      ],
+      "BasePrice": 50000,
+      "BaseReward": 25000
+    }
+  ],
+  "MaxStatLevel": 10,
+  "EvolveParams": [
+    3,
+    15
+  ],
+  "StatParamsByRankLevel": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "PriceParamsByRankLevel": [
+    1,
+    1.5,
+    2,
+    2.5,
+    3,
+    3.5,
+    4,
+    4.5,
+    5,
+    5.5,
+    6,
+    6.5,
+    7,
+    7.5,
+    8,
+    8.5,
+    9,
+    9.5,
+    10,
+    10.5
+  ],
+  "RewardParamsByRankLevel": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "CoinRewardMilestone": 1.5
+}

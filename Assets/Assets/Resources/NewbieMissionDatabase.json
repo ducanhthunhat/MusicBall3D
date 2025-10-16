@@ -1,0 +1,176 @@
+{
+  "Title": "Newbie Mission",
+  "IsEnable": true,
+  "StartDay": 0,
+  "TimeOfEvent": 7,
+  "KeepProgress": false,
+  "DayMissions": [
+    {
+      "Title": "Day 1",
+      "Missions": [
+        {
+          "Type": "StartSongs",
+          "Value": 3,
+          "Rewards": [
+            {
+              "Type": "Coin",
+              "Value": 25
+            }
+          ]
+        },
+        {
+          "Type": "PlaySongs1Star",
+          "Value": 2,
+          "Rewards": [
+            {
+              "Type": "Exp",
+              "Value": 5
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "Gem",
+          "Value": 10
+        }
+      ]
+    },
+    {
+      "Title": "Day 2",
+      "Missions": [
+        {
+          "Type": "PlaySongs2Star",
+          "Value": 2,
+          "Rewards": [
+            {
+              "Type": " Coin",
+              "Value": 20
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "Character",
+          "Value": 2
+        }
+      ]
+    },
+    {
+      "Title": "Day 3",
+      "Missions": [
+        {
+          "Type": "FinishSongs",
+          "Value": 1,
+          "Rewards": [
+            {
+              "Type": "Coin",
+              "Value": 15
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "Song",
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "Title": "Day 4",
+      "Missions": [
+        {
+          "Type": "ReplayTimes",
+          "Value": 3,
+          "Rewards": [
+            {
+              "Type": "Exp",
+              "Value": 5
+            }
+          ]
+        },
+        {
+          "Type": "UnlockSongs",
+          "Value": 3,
+          "Rewards": [
+            {
+              "Type": "Coin",
+              "Value": 25
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "Character",
+          "Value": 5
+        }
+      ]
+    },
+    {
+      "Title": "Day 5",
+      "Missions": [
+        {
+          "Type": "ContinueTimes",
+          "Value": 2,
+          "Rewards": [
+            {
+              "Type": "Coin",
+              "Value": 20
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "Song",
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "Title": "Day 6",
+      "Missions": [
+        {
+          "Type": "GetAtLeastPoint",
+          "Value": 1024,
+          "Rewards": [
+            {
+              "Type": "Coin",
+              "Value": 30
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "Gem",
+          "Value": 5
+        }
+      ]
+    },
+    {
+      "Title": "Day 7",
+      "Missions": [
+        {
+          "Type": "GetStars",
+          "Value": 4,
+          "Rewards": [
+            {
+              "Type": "Exp",
+              "Value": 5
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "Type": "Song",
+          "Value": 1
+        }
+      ]
+    }
+  ]
+}

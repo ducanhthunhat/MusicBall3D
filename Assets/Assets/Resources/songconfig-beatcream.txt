@@ -1,0 +1,12 @@
+﻿path,name,bmp,diamonds,type,tags,theme,offset,acm_id,acm_id_v3,label,filter,flag,info,artist,linkYoutube,feat,midi_grid,midi_line,midi_tab,urlArtistCover,msc_path,shortNoteDistance
+DanceMonkey_TonesAndI_v1_CreamMaker.mp3,Dance Monkey,120,0,OPEN,POPULAR; Pop; NEW;Hot,1,0,1.59E+12,9fb191bf-81e6-49f0-b41b-86951bf4c587,,,,Dance Monkey,TONES AND I,,,,,,,,
+Believer_ImagineDragons_v1_CreamMaker.mp3,Believer,120,0,OPEN,POPULAR; Pop; NEW;Hot,1,0,1.59E+12,9fb191bf-81e6-49f0-b41b-86951bf4c587,,,,Bad Guy,BillieElish,,,,,,,bin.bin,0.222
+AxelF_CrazyFrog_v1_CreamMaker.mp3,AxelF,120,0,OPEN,POPULAR; Pop; NEW;Hot,1,0,1.59E+12,9fb191bf-81e6-49f0-b41b-86951bf4c587,,,,DanceMonkey,TonesAndI,,,,,,,bin.bin,0.153
+badguy_BillieEilish_v1_CreamMaker.mp3,Bad Guy,120,0,OPEN,POPULAR; Pop; NEW;Hot,1,0,1.59E+12,9fb191bf-81e6-49f0-b41b-86951bf4c587,,,,Despacito,LuisFonsi,,,,,,,bin.bin,0.168
+Yummy_JustinBieber_v1_CreamMaker.mp3,Yummy,120,0,OPEN,POPULAR; Pop; NEW;Hot,1,0,1.59E+12,9fb191bf-81e6-49f0-b41b-86951bf4c587,,,,SomeoneYouLoved,LewisCapaldi,,,,,,,bin.bin,0.272
+2PhutHonKAIZRemix_Phao_v1_CreamMaker.mp3,2 Phut Hon,106,0,OPEN,TheFatRat; POPULAR; EDM; RapidJump,-1,0,1.56E+12,5177876f-313b-4aea-865f-47f2248f812c,,,,Unity - TheFatRat,TheFatRat,https://www.youtube.com/watch?v=n8X9_MgEdCg,,,,,,,
+BadHabits_EdSheeran_v1_CreamMaker.mp3,Bad Habits,130,0,VIDEO,POPULAR; KPop; NEW; Hot,6,0,1.62E+12,efbfa2cd-9794-46b2-a097-23051583d17e,Hot,0.3;0.1;0.1,,How You Like That,BLACKPINK,,,,,,,,
+KissMeMore_DojaCat_v1_CreamMaker.mp3,Kiss Me More,105,0,VIDEO,POPULAR; EDM;Hot,1,0,1.56E+12,3d1d7883-dbd7-43f7-9ac6-42632930f8c7,Hot,,,Faded,Alan Walker,,,,,,,,
+Levitating_DuaLipa_v1_CreamMaker.mp3,Levitating,120,0,VIDEO,POPULAR; Pop; NEW,26,0,1.56E+12,b85a4f98-6b67-4ed2-ac23-27c21be0d776,Hot,,,Believer,Imagine Dragons,,,,,,,,
+WakeMeUp_Avicii_v1_CreamMaker.mp3,Wake Me Up,140,0,VIDEO,POPULAR; Pop; NEW;Hot,-1,0,1.57E+12,8bccfa11-7077-4162-ad57-4c8898d4fe83,Hot,,,bad guy,Billie Eilish,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,

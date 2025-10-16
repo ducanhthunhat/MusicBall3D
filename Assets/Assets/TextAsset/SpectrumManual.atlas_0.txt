@@ -1,0 +1,23 @@
+SpectrumManual.png
+size:1658,1658
+filter:Linear,Linear
+pma:true
+Ellipse 1
+bounds:1106,815,300,300
+offsets:1,1,302,302
+OutSide_glow_Blue
+bounds:2,1106,550,550
+OutSide_glow_Green
+bounds:2,554,550,550
+OutSide_glow_Pink
+bounds:2,2,550,550
+OutSide_glow_Purple
+bounds:554,1106,550,550
+OutSide_glow_White
+bounds:554,554,550,550
+OutSide_glow_Yellow
+bounds:554,2,550,550
+white_circle_
+bounds:1106,1117,539,531
+offsets:0,8,550,550
+rotate:90

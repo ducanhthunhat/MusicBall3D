@@ -1,0 +1,20 @@
+SpectrumManual.png
+	size: 1356, 1356
+	filter: Linear, Linear
+	pma: true
+Ellipse  1_white
+	bounds: 554, 2, 283, 283
+	offsets: 9, 10, 302, 302
+Ellipse 1
+	bounds: 839, 2, 283, 283
+	offsets: 9, 10, 302, 302
+OutSide_glow_White
+	bounds: 2, 801, 550, 550
+OutSide_glow_Yellow
+	bounds: 2, 249, 550, 550
+white_circle_
+	bounds: 554, 820, 539, 531
+	offsets: 0, 8, 550, 550
+white_circle_Sky
+	bounds: 554, 287, 539, 531
+	offsets: 0, 8, 550, 550

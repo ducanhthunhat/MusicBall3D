@@ -1,0 +1,271 @@
+{
+  "PriceUpgradeStar": 10,
+  "PriceUpgradeLevels": [
+    {
+      "LevelRange": [
+        1,
+        20
+      ],
+      "MaterialByRarity": [
+        5,
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "LevelRange": [
+        21,
+        40
+      ],
+      "MaterialByRarity": [
+        15,
+        20,
+        30,
+        40
+      ]
+    },
+    {
+      "LevelRange": [
+        41,
+        60
+      ],
+      "MaterialByRarity": [
+        25,
+        30,
+        40,
+        50
+      ]
+    },
+    {
+      "LevelRange": [
+        61,
+        80
+      ],
+      "MaterialByRarity": [
+        40,
+        45,
+        50,
+        60
+      ]
+    },
+    {
+      "LevelRange": [
+        81,
+        100
+      ],
+      "MaterialByRarity": [
+        50,
+        60,
+        65,
+        70
+      ]
+    }
+  ],
+  "LevelStatDataByRarity": [
+    {
+      "Rarity": "Common",
+      "BaseStats": [
+        500,
+        100,
+        5
+      ],
+      "StatsIncreaseByLevel": [
+        50,
+        5,
+        2
+      ]
+    },
+    {
+      "Rarity": "Rare",
+      "BaseStats": [
+        600,
+        120,
+        6
+      ],
+      "StatsIncreaseByLevel": [
+        60,
+        6,
+        3
+      ]
+    },
+    {
+      "Rarity": "Epic",
+      "BaseStats": [
+        800,
+        200,
+        10
+      ],
+      "StatsIncreaseByLevel": [
+        70,
+        8,
+        5
+      ]
+    },
+    {
+      "Rarity": "Legendary",
+      "BaseStats": [
+        1000,
+        300,
+        20
+      ],
+      "StatsIncreaseByLevel": [
+        100,
+        8,
+        10
+      ]
+    }
+  ],
+  "GrowthStatDataByLevel": [
+    {
+      "Level": 10,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "INCREASE_HP",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 20,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "INCREASE_ATK",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 30,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "ALLBALL_INCREASE_HP",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 40,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "INCREASE_HP",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 50,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "INCREASE_ATK",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 60,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "ALLBALL_INCREASE_ATK",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 70,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "INCREASE_HP",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 80,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "INCREASE_ATK",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 90,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "ALLBALL_INCREASE_HP",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    },
+    {
+      "Level": 100,
+      "ValueByRarity": [
+        5,
+        10,
+        10,
+        15
+      ],
+      "StatData": {
+        "Type": "ALLBALL_INCREASE_ATK",
+        "Parameters": {
+          "Percent": 5
+        }
+      }
+    }
+  ]
+}

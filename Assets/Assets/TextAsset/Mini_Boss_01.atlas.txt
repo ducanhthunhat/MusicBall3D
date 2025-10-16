@@ -1,0 +1,56 @@
+Mini_Boss_01.png
+	size: 332, 332
+	filter: Linear, Linear
+	pma: true
+Eye_L
+	bounds: 212, 111, 47, 49
+	offsets: 0, 0, 48, 49
+	rotate: 90
+Eye_R
+	bounds: 263, 111, 47, 49
+	offsets: 1, 0, 48, 49
+	rotate: 90
+Hand_L
+	bounds: 167, 104, 43, 42
+	offsets: 4, 2, 47, 44
+Hand_R
+	bounds: 211, 59, 43, 42
+	offsets: 0, 2, 47, 44
+	rotate: 90
+Head
+	bounds: 2, 148, 208, 181
+	offsets: 11, 5, 229, 299
+Leg_L
+	bounds: 293, 57, 24, 29
+	rotate: 90
+Leg_R
+	bounds: 293, 31, 24, 29
+	rotate: 90
+Loop1/Comp 1_00000
+	bounds: 212, 220, 109, 113
+	offsets: 19, 13, 150, 150
+	rotate: 90
+Mouth
+	bounds: 212, 160, 113, 58
+Piano_Char/Body
+	bounds: 2, 2, 163, 144
+Piano_Char/Eye_L
+	bounds: 167, 56, 42, 46
+	offsets: 1, 0, 44, 47
+Piano_Char/Eye_R
+	bounds: 167, 8, 42, 46
+	offsets: 1, 0, 43, 47
+Piano_Char/Hand_L
+	bounds: 211, 16, 41, 39
+	offsets: 0, 3, 46, 42
+	rotate: 90
+Piano_Char/Hand_R
+	bounds: 252, 16, 41, 39
+	offsets: 5, 3, 46, 42
+	rotate: 90
+Piano_Char/Leg_L
+	bounds: 293, 83, 26, 32
+	rotate: 90
+Piano_Char/Leg_R
+	bounds: 255, 83, 26, 32
+	rotate: 90

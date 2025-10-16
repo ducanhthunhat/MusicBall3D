@@ -1,0 +1,98 @@
+Boss_syren.png
+	size: 1624, 1624
+	filter: Linear, Linear
+	pma: true
+	scale: 0.5
+Body
+	bounds: 2, 661, 539, 961
+	offsets: 78, 57, 674, 1052
+Head
+	bounds: 543, 788, 834, 830
+	offsets: 0, 1, 834, 831
+	rotate: 90
+L_Hand_1
+	bounds: 1485, 844, 125, 249
+L_Hand_2
+	bounds: 2, 6, 98, 238
+	offsets: 1, 0, 99, 238
+L_Hand_3
+	bounds: 1512, 1116, 101, 153
+	offsets: 4, 0, 105, 155
+L_Hand_4
+	bounds: 595, 146, 116, 127
+L_Rope
+	bounds: 543, 549, 576, 237
+L_arm1
+	bounds: 1360, 230, 135, 556
+	offsets: 0, 3, 135, 560
+L_arm2_1
+	bounds: 1497, 234, 97, 357
+	offsets: 0, 0, 99, 357
+L_arm2_2
+	bounds: 1512, 1271, 109, 351
+	offsets: 5, 4, 115, 355
+L_arm2_3
+	bounds: 2, 246, 113, 413
+L_arm2_4
+	bounds: 1375, 824, 108, 269
+	offsets: 1, 0, 109, 269
+L_soulder
+	bounds: 1360, 19, 261, 209
+	offsets: 38, 10, 321, 227
+Neck_R
+	bounds: 117, 378, 275, 281
+	offsets: 0, 0, 275, 293
+R_Hand_1
+	bounds: 1497, 593, 125, 249
+R_Hand_2
+	bounds: 231, 7, 98, 238
+	offsets: 0, 0, 99, 238
+	rotate: 90
+R_Hand_3
+	bounds: 857, 219, 101, 153
+	offsets: 0, 0, 105, 155
+	rotate: 90
+R_Hand_4
+	bounds: 102, 38, 116, 127
+	rotate: 90
+R_arm1
+	bounds: 1375, 1095, 135, 527
+	offsets: 0, 3, 135, 560
+R_arm2_1
+	bounds: 1013, 190, 97, 357
+	offsets: 2, 0, 99, 357
+R_arm2_2
+	bounds: 394, 275, 109, 351
+	offsets: 1, 4, 115, 355
+	rotate: 90
+R_arm2_3
+	bounds: 394, 386, 113, 413
+	rotate: 90
+R_arm2_4
+	bounds: 747, 51, 108, 269
+	offsets: 0, 0, 109, 269
+R_rope
+	bounds: 1121, 210, 576, 237
+	rotate: 90
+R_soulder
+	bounds: 809, 322, 225, 202
+	offsets: 0, 48, 262, 259
+	rotate: 90
+brownEye_L
+	bounds: 117, 156, 200, 220
+	offsets: 0, 3, 200, 223
+brownEye_R
+	bounds: 1112, 8, 200, 223
+	rotate: 90
+eye_boss_syren
+	bounds: 595, 47, 134, 97
+	offsets: 28, 18, 167, 119
+teechDown_L
+	bounds: 319, 259, 72, 117
+teechDown_R
+	bounds: 394, 501, 116, 158
+	offsets: 0, 0, 116, 159
+teech_L
+	bounds: 857, 22, 200, 166
+teech_R
+	bounds: 393, 107, 200, 166

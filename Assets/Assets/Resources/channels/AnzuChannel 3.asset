@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 434670550, guid: 1dbcd907c6259f29a3151d242a182846, type: 3}
+  m_Name: AnzuChannel 3
+  m_EditorClassIdentifier:
+  ChannelData:
+    AspectRatio: 0.65
+    ChannelTags:
+    ChannelName: AlongTheRoad 3
+    StaticContent: 0
+    AllowsInteractive: 1
+    AllowShrinkToFit: 1
+    AllowsImages: 1
+    AllowsVideos: 0
+    AllowAudioSupport: 0
+    AllowsLogos: 0
+    FallbackClipPath:
+    FallbackTimeout: 0
+    GenerateMipmaps: 0
+    ForcedWidth: 0
+    ForcedHeight: 0
+    TextureFormat: 7

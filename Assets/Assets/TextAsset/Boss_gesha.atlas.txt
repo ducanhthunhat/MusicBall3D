@@ -1,0 +1,65 @@
+Boss_gesha.png
+	size: 1036, 1036
+	filter: Linear, Linear
+	pma: true
+Body_Blue
+	bounds: 2, 527, 351, 506
+	offsets: 0, 4, 351, 510
+Body_Red
+	bounds: 2, 19, 351, 506
+	offsets: 0, 4, 351, 510
+Co_bg
+	bounds: 719, 187, 120, 167
+Hand_1_LR
+	bounds: 355, 30, 204, 132
+	offsets: 10, 10, 223, 155
+Hand_2_Fan_Back_LR
+	bounds: 561, 95, 143, 91
+	offsets: 1, 1, 145, 96
+Hand_2_Fan_Front_LR
+	bounds: 719, 18, 133, 80
+	offsets: 3, 2, 140, 83
+Head_Decor_1
+	bounds: 828, 362, 143, 53
+Head_Decor_2
+	bounds: 841, 310, 78, 50
+	offsets: 1, 0, 79, 51
+Head_Decor_Flower
+	bounds: 520, 188, 197, 166
+	offsets: 0, 7, 197, 173
+Head_Face_Blue
+	bounds: 550, 744, 321, 289
+	offsets: 0, 1, 321, 290
+Head_Face_Red
+	bounds: 550, 453, 321, 289
+	offsets: 0, 1, 321, 290
+Head_Hair
+	bounds: 561, 17, 156, 76
+Head_TramCaiToc
+	bounds: 706, 100, 85, 191
+	offsets: 2, 1, 87, 192
+	rotate: 90
+Leaf
+	bounds: 520, 356, 95, 306
+	offsets: 3, 0, 101, 309
+	rotate: 90
+LowerArm_Cloth_Back_LR
+	bounds: 355, 599, 193, 434
+	offsets: 5, 0, 198, 471
+LowerArm_Cloth_Front_LR
+	bounds: 355, 164, 163, 433
+	offsets: 0, 0, 163, 471
+LowerArm_LR
+	bounds: 873, 417, 213, 146
+	offsets: 4, 1, 218, 151
+	rotate: 90
+UpperArm_Back_LR
+	bounds: 873, 632, 160, 401
+	offsets: 17, 26, 204, 427
+VFX_Glow
+	bounds: 841, 247, 62, 61
+	offsets: 5, 5, 72, 71
+VFX_Glow_Blue
+	bounds: 854, 36, 62, 61
+	offsets: 5, 5, 72, 71
+	rotate: 90

@@ -1,0 +1,6 @@
+{
+  "AttempRequire": 3,
+  "DifferenceFactor": 1,
+  "BonusUserATKPerRound": 0.3,
+  "TrapDamagePercentByRarity": [5, 10, 15, 20, 25]
+}

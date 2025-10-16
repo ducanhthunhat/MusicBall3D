@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a496069418dfdf654134aff8f9ce1e, type: 3}
+  m_Name: DataSkill
+  m_EditorClassIdentifier:
+  raritySkillDataList:
+  - rarity: 0
+    frameSprite: {fileID: 21300000, guid: 36c66bc4daf440e409e1d9fe5ea3421b, type: 2}
+    bgPopupUpgradeSkillSprite: {fileID: 21300000, guid: 8b9cc4c0f7785ba49986578e062127c6, type: 2}
+    tagPopupUpgradeSkillSprite: {fileID: 21300000, guid: 15eb2622dc436a942b4efb92e9c7b04a, type: 2}
+  - rarity: 1
+    frameSprite: {fileID: 21300000, guid: 210b3817e256ae74ba730997c5d4759a, type: 2}
+    bgPopupUpgradeSkillSprite: {fileID: 21300000, guid: 8bd64904f0cdf364cb389c14ad385e26, type: 2}
+    tagPopupUpgradeSkillSprite: {fileID: 21300000, guid: 04518a050f6ea624a8dc9a3a0f8b40cf, type: 2}
+  - rarity: 2
+    frameSprite: {fileID: 21300000, guid: 151ee5019bc97504d8672a49d2ed46ce, type: 2}
+    bgPopupUpgradeSkillSprite: {fileID: 21300000, guid: 8ef16e4de5117f442a39202598601626, type: 2}
+    tagPopupUpgradeSkillSprite: {fileID: 21300000, guid: 2da696373e348cb489f202a7e792b0bf, type: 2}
+  - rarity: 3
+    frameSprite: {fileID: 21300000, guid: 8cea7ce52a0f62141933dc7a5781847d, type: 2}
+    bgPopupUpgradeSkillSprite: {fileID: 21300000, guid: 343f63f022e3f8e44b37d17e2cf907f6, type: 2}
+    tagPopupUpgradeSkillSprite: {fileID: 21300000, guid: 5694cd318218d6a41ae8187778827b73, type: 2}

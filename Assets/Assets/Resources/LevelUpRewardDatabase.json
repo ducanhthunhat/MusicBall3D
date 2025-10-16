@@ -1,0 +1,274 @@
+{
+  "RewardLevelUpData": [
+    {
+      "Level": 1,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 150
+        }
+      ]
+    },
+    {
+      "Level": 2,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 150
+        }
+      ]
+    },
+    {
+      "Level": 3,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 150
+        }
+      ]
+    },
+    {
+      "Level": 4,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 150
+        }
+      ]
+    },
+    {
+      "Level": 5,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 225
+        }
+      ]
+    },
+    {
+      "Level": 6,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 225
+        }
+      ]
+    },
+    {
+      "Level": 7,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 225
+        }
+      ]
+    },
+    {
+      "Level": 8,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 225
+        }
+      ]
+    },
+    {
+      "Level": 9,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 225
+        }
+      ]
+    },
+    {
+      "Level": 10,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 340
+        }
+      ]
+    },
+    {
+      "Level": 11,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 340
+        }
+      ]
+    },
+    {
+      "Level": 12,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 340
+        }
+      ]
+    },
+    {
+      "Level": 13,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 340
+        }
+      ]
+    },
+    {
+      "Level": 14,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 340
+        }
+      ]
+    },
+    {
+      "Level": 15,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 510
+        }
+      ]
+    },
+    {
+      "Level": 16,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 510
+        }
+      ]
+    },
+    {
+      "Level": 17,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 510
+        }
+      ]
+    },
+    {
+      "Level": 18,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 510
+        }
+      ]
+    },
+    {
+      "Level": 19,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 510
+        }
+      ]
+    },
+    {
+      "Level": 20,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 765
+        }
+      ]
+    },
+    {
+      "Level": 21,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 765
+        }
+      ]
+    },
+    {
+      "Level": 22,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 765
+        }
+      ]
+    },
+    {
+      "Level": 23,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 765
+        }
+      ]
+    },
+    {
+      "Level": 24,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 765
+        }
+      ]
+    },
+    {
+      "Level": 25,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 1150
+        }
+      ]
+    },
+    {
+      "Level": 26,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 1150
+        }
+      ]
+    },
+    {
+      "Level": 27,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 1150
+        }
+      ]
+    },
+    {
+      "Level": 28,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 1150
+        }
+      ]
+    },
+    {
+      "Level": 29,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 1150
+        }
+      ]
+    },
+    {
+      "Level": 30,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 1725
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+cut_zeus_boss.png
+	size: 2952, 2952
+	filter: Linear, Linear
+	pma: true
+Body
+	bounds: 2, 1759, 1171, 1191
+	offsets: 176, 302, 1434, 1703
+Glass
+	bounds: 1563, 826, 494, 268
+	offsets: 0, 0, 494, 269
+Glass_Text
+	bounds: 1036, 2, 284, 102
+	offsets: 1, 1, 286, 104
+Glass_screen
+	bounds: 2745, 2397, 395, 150
+	rotate: 90
+Hand/Arm_ADE_1
+	bounds: 1175, 2297, 653, 456
+	offsets: 32, 0, 686, 462
+	rotate: 90
+Hand/Arm_A_2
+	bounds: 1216, 1465, 582, 330
+Hand/Arm_B_1
+	bounds: 2, 70, 777, 515
+	offsets: 0, 11, 777, 836
+	rotate: 90
+Hand/Arm_B_2
+	bounds: 2091, 2430, 651, 259
+	offsets: 1, 0, 652, 259
+Hand/Arm_C_1
+	bounds: 2, 849, 908, 605
+	offsets: 0, 4, 1104, 609
+	rotate: 90
+Hand/Arm_C_2
+	bounds: 2091, 2084, 629, 344
+	offsets: 7, 0, 637, 347
+Hand/Arm_D_2
+	bounds: 1534, 93, 355, 380
+	offsets: 14, 0, 369, 380
+Hand/Arm_E_2
+	bounds: 2084, 1354, 544, 419
+	offsets: 0, 1, 544, 420
+Hand/FX/Arm_ADE_1
+	bounds: 1633, 2297, 653, 456
+	offsets: 32, 0, 686, 462
+	rotate: 90
+Hand/FX/Arm_A_2
+	bounds: 1216, 1133, 582, 330
+Hand/FX/Arm_B_1
+	bounds: 519, 70, 777, 515
+	offsets: 0, 11, 777, 836
+	rotate: 90
+Hand/FX/Arm_B_2
+	bounds: 2091, 2691, 652, 259
+Hand/FX/Arm_C_1
+	bounds: 609, 849, 908, 605
+	offsets: 0, 4, 1104, 609
+	rotate: 90
+Hand/FX/Arm_C_2
+	bounds: 2087, 1775, 626, 307
+	offsets: 10, 1, 637, 347
+Hand/FX/Arm_D_2
+	bounds: 2531, 532, 358, 380
+	offsets: 11, 0, 369, 380
+	rotate: 90
+Hand/FX/Arm_E_2
+	bounds: 2076, 934, 544, 418
+	offsets: 0, 2, 544, 420
+Hand/FX/Hand_A
+	bounds: 1216, 849, 282, 345
+	offsets: 0, 1, 284, 346
+	rotate: 90
+Hand/FX/Hand_A1
+	bounds: 1800, 1786, 254, 284
+	offsets: 8, 1, 273, 285
+	rotate: 90
+Hand/FX/Hand_B
+	bounds: 2167, 38, 258, 254
+	offsets: 1, 5, 259, 259
+	rotate: 90
+Hand/FX/Hand_B1
+	bounds: 1800, 1096, 340, 274
+	rotate: 90
+Hand/FX/Hand_C
+	bounds: 1534, 475, 469, 349
+	offsets: 1, 15, 475, 373
+Hand/FX/Hand_D
+	bounds: 2630, 1234, 304, 340
+	offsets: 5, 0, 309, 340
+Hand/FX/Hand_E
+	bounds: 1891, 133, 340, 274
+	rotate: 90
+Hand/Hand_A
+	bounds: 1800, 1438, 282, 346
+	offsets: 1, 0, 284, 346
+Hand/Hand_A1
+	bounds: 1800, 2042, 253, 285
+	offsets: 8, 0, 273, 285
+	rotate: 90
+Hand/Hand_B
+	bounds: 2423, 38, 258, 249
+	offsets: 1, 9, 259, 259
+	rotate: 90
+Hand/Hand_B1
+	bounds: 2167, 298, 340, 274
+Hand/Hand_E
+	bounds: 2167, 298, 340, 274
+Hand/Hand_C
+	bounds: 2059, 574, 470, 358
+	offsets: 1, 8, 475, 373
+Hand/Hand_D
+	bounds: 2622, 892, 293, 340
+	offsets: 14, 0, 309, 340
+Head
+	bounds: 1175, 1797, 498, 623
+	offsets: 75, 102, 678, 725
+	rotate: 90
+Head_Crown
+	bounds: 2722, 2028, 367, 226
+	rotate: 90
+Head_Hair
+	bounds: 2715, 1576, 450, 214
+	rotate: 90
+Head_VFX
+	bounds: 1036, 106, 741, 496
+	offsets: 1, 1, 743, 498
+	rotate: 90
+Mouth_Open
+	bounds: 2745, 2794, 196, 156
+	offsets: 20, 35, 232, 192

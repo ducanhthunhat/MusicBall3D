@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 2c9a3c3dfa4de5848aa27343ba85896c
+timeCreated: 1760662200
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  externalObjects: {}
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - UTM Neo Sans Intel
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d27423c8e3f4c854697496f10607d05a, type: 3}
+  - {fileID: 12800000, guid: 6d15c12d2f4210d42b86ee2b3d5c39db, type: 3}
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData:
+  assetBundleName:
+  assetBundleVariant:

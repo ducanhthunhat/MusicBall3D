@@ -1,0 +1,106 @@
+{
+  "MissionData": [
+    {
+      "MissionID": "PlayAnySong",
+      "TargetValue": 2,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "DefeatBoss",
+      "TargetValue": 2,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "UpgradeCharacter",
+      "TargetValue": 1,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "UpgradeSkill",
+      "TargetValue": 6,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "WatchAds",
+      "TargetValue": 2,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "PurchaseBundle",
+      "TargetValue": 1,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "HitPerfect",
+      "TargetValue": 15,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "ActiveSkill",
+      "TargetValue": 20,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "UpgradeTalent",
+      "TargetValue": 6,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "Login",
+      "TargetValue": 1,
+      "FirePoint": 10
+    },
+    {
+      "MissionID": "BuyOrWatchEnergy",
+      "TargetValue": 1,
+      "FirePoint": 10
+    }
+  ],
+  "MilestoneRewardData": [
+    {
+      "PointMilestone": 20,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 150
+        }
+      ]
+    },
+    {
+      "PointMilestone": 40,
+      "Rewards": [
+        {
+          "Type": "Gem",
+          "Value": 15
+        }
+      ]
+    },
+    {
+      "PointMilestone": 60,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 152
+        }
+      ]
+    },
+    {
+      "PointMilestone": 80,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 153
+        }
+      ]
+    },
+    {
+      "PointMilestone": 100,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 154
+        }
+      ]
+    }
+  ]
+}

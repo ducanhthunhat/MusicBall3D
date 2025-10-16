@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1497261852, guid: ebe353a9e51fc6708625f16edcb81e06, type: 3}
+  m_Name: Trap_Lv2_Atlas
+  m_EditorClassIdentifier:
+  atlasFile: {fileID: 4900000, guid: d6766d891c5f34f489c4887207762f78, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 81f1bb54a1cd9b349a9ad954805f2ea0, type: 2}

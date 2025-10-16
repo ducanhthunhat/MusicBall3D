@@ -1,0 +1,154 @@
+{
+  "ArchievementData": [
+    {
+      "ArchievementID": "DealDamageToBoss",
+      "ValueRequired": [1000, 2000, 5000, 10000, 50000],
+      "RewardQuantity": [20, 20, 30, 40, 50],
+      "Reward": { "Type": "Gem", "Value": 50 }
+    },
+    {
+      "ArchievementID": "HealHP",
+      "ValueRequired": [1000, 5000, 10000, 20000, 50000],
+      "RewardQuantity": [20, 20, 30, 40, 51],
+      "Reward": { "Type": "Gem", "Value": 51 }
+    },
+    {
+      "ArchievementID": "FreezeBoss",
+      "ValueRequired": [30, 60, 100, 200, 400],
+      "RewardQuantity": [20, 20, 30, 40, 52],
+      "Reward": { "Type": "Gem", "Value": 52 }
+    },
+    {
+      "ArchievementID": "DefeatBoss",
+      "ValueRequired": [5, 20, 40, 100, 200],
+      "RewardQuantity": [20, 20, 30, 40, 53],
+      "Reward": { "Type": "Gem", "Value": 53 }
+    },
+    {
+      "ArchievementID": "ActiveSkill",
+      "ValueRequired": [10, 100, 500, 1000, 1500],
+      "RewardQuantity": [20, 20, 30, 40, 54],
+      "Reward": { "Type": "Gem", "Value": 54 }
+    },
+    {
+      "ArchievementID": "CollectCoin",
+      "ValueRequired": [10000, 100000, 500000, 1000000, 10000000],
+      "RewardQuantity": [20, 20, 30, 40, 55],
+      "Reward": { "Type": "Gem", "Value": 55 }
+    },
+    {
+      "ArchievementID": "SpendCoin",
+      "ValueRequired": [10000, 100000, 500000, 1000000, 10000000],
+      "RewardQuantity": [20, 20, 30, 40, 56],
+      "Reward": { "Type": "Gem", "Value": 56 }
+    },
+    {
+      "ArchievementID": "WatchAds",
+      "ValueRequired": [10, 15, 20, 30, 50],
+      "RewardQuantity": [20, 20, 30, 40, 57],
+      "Reward": { "Type": "Gem", "Value": 57 }
+    },
+    {
+      "ArchievementID": "CollectCharacter",
+      "ValueRequired": [5, 10, 20, 30, 50],
+      "RewardQuantity": [20, 20, 30, 40, 58],
+      "Reward": { "Type": "Gem", "Value": 58 }
+    },
+    {
+      "ArchievementID": "UpgradeCharacterToLv30",
+      "ValueRequired": [5, 10, 20, 30, 50],
+      "RewardQuantity": [20, 20, 30, 40, 59],
+      "Reward": { "Type": "Gem", "Value": 59 }
+    },
+    {
+      "ArchievementID": "UpgradeCharacterToLv100",
+      "ValueRequired": [5, 10, 20, 30, 50],
+      "RewardQuantity": [20, 20, 30, 40, 60],
+      "Reward": { "Type": "Gem", "Value": 60 }
+    },
+    {
+      "ArchievementID": "PlayerReachLevel",
+      "ValueRequired": [10, 20, 30, 40, 50],
+      "RewardQuantity": [20, 20, 30, 40, 61],
+      "Reward": { "Type": "Gem", "Value": 61 }
+    },
+    {
+      "ArchievementID": "FinishWorld",
+      "ValueRequired": [3, 8, 13, 20],
+      "RewardQuantity": [20, 20, 30, 40, 62],
+      "Reward": { "Type": "Gem", "Value": 62 }
+    },
+    {
+      "ArchievementID": "UpgradeSkillToLv3",
+      "ValueRequired": [5, 10, 15, 20, 25],
+      "RewardQuantity": [20, 20, 30, 40, 63],
+      "Reward": { "Type": "Gem", "Value": 63 }
+    },
+    {
+      "ArchievementID": "UpgradeSkillToLv5",
+      "ValueRequired": [5, 10, 15, 20, 25],
+      "RewardQuantity": [20, 20, 30, 40, 64],
+      "Reward": { "Type": "Gem", "Value": 64 }
+    },
+    {
+      "ArchievementID": "CollectFrame",
+      "ValueRequired": [5, 10, 15, 20, 25],
+      "RewardQuantity": [20, 20, 30, 40, 65],
+      "Reward": { "Type": "Gem", "Value": 65 }
+    },
+    {
+      "ArchievementID": "CollectMedal",
+      "ValueRequired": [5, 10, 15, 20, 25],
+      "RewardQuantity": [20, 20, 30, 40, 66],
+      "Reward": { "Type": "Gem", "Value": 66 }
+    },
+    {
+      "ArchievementID": "CollectAvatar",
+      "ValueRequired": [5, 10, 15, 20, 25],
+      "RewardQuantity": [20, 20, 30, 40, 67],
+      "Reward": { "Type": "Gem", "Value": 67 }
+    },
+    {
+      "ArchievementID": "CompleteEasySong",
+      "ValueRequired": [5, 20, 40, 60, 80],
+      "RewardQuantity": [20, 20, 30, 40, 68],
+      "Reward": { "Type": "Gem", "Value": 68 }
+    },
+    {
+      "ArchievementID": "CompleteNormalSong",
+      "ValueRequired": [5, 20, 40, 60, 80],
+      "RewardQuantity": [20, 20, 30, 40, 69],
+      "Reward": { "Type": "Gem", "Value": 69 }
+    },
+    {
+      "ArchievementID": "CompleteHardSong",
+      "ValueRequired": [5, 20, 40, 60, 80],
+      "RewardQuantity": [20, 20, 30, 40, 70],
+      "Reward": { "Type": "Gem", "Value": 70 }
+    },
+    {
+      "ArchievementID": "HitPerfect",
+      "ValueRequired": [100, 250, 500, 1000, 2000],
+      "RewardQuantity": [20, 20, 30, 40, 71],
+      "Reward": { "Type": "Gem", "Value": 71 }
+    },
+    {
+      "ArchievementID": "Revive",
+      "ValueRequired": [10, 30, 60, 100, 200],
+      "RewardQuantity": [20, 20, 30, 40, 72],
+      "Reward": { "Type": "Gem", "Value": 72 }
+    },
+    {
+      "ArchievementID": "UseTravel",
+      "ValueRequired": [10, 30, 60, 100, 200],
+      "RewardQuantity": [20, 20, 30, 40, 73],
+      "Reward": { "Type": "Gem", "Value": 73 }
+    },
+    {
+      "ArchievementID": "HitFever",
+      "ValueRequired": [50, 100, 250, 500, 1000],
+      "RewardQuantity": [20, 20, 30, 40, 74],
+      "Reward": { "Type": "Gem", "Value": 74 }
+    }
+  ]
+}

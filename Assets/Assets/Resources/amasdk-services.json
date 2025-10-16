@@ -1,0 +1,93 @@
+[
+    {
+      "id": "ama-passport",
+      "name": "AmaPassport",
+      "installpath": "AmaSDK/AmaPassport",
+      "isEssential": true,
+      "bucketUrl": "https://ama-sdk.amanotes.net/ama-passport",
+      "documentation": "https://amanotesjsc.atlassian.net/l/c/skaSzhnG",
+      "isEnable": true
+    },
+    {
+      "id": "event-gateway",
+      "name": "Event Gateway",
+      "installpath": "AmaSDK/EventGateway",
+      "isEssential": true,
+      "bucketUrl": "https://ama-sdk.amanotes.net/event-gateway",
+      "documentation": "https://amanotesjsc.atlassian.net/l/c/XDbU9YGQ",
+      "isEnable": true
+    },
+    {
+      "id": "ama-firebase-remote-config",
+      "name": "FirebaseRemoteConfig",
+      "installpath": "AmaSDK/FirebaseRemoteConfig",
+      "isEssential": true,
+      "bucketUrl": "https://ama-sdk.amanotes.net/firebase-remote-config",
+      "documentation": "",
+      "isEnable": true
+    },
+    {
+      "id": "ama-firebase-analytics",
+      "name": "FirebaseAnalytics",
+      "installpath": "AmaSDK/FirebaseAnalytics",
+      "isEssential": true,
+      "bucketUrl": "https://ama-sdk.amanotes.net/firebase-analytics",
+      "documentation": "",
+      "isEnable": true
+    },
+    {
+      "id": "sdk-monitor",
+      "name": "SDKMonitor",
+      "installpath": "AmaSDK/SDKMonitor",
+      "isEssential": true,
+      "bucketUrl": "https://ama-sdk.amanotes.net/sdk-monitor",
+      "documentation": "https://amanotesjsc.atlassian.net/l/c/skaSzhnG",
+      "isEnable": true
+    },
+    {
+      "id": "ama-appsflyer",
+      "name": "Appsflyer Adapter",
+      "installpath": "AmaSDK/AmaAppsflyer",
+      "isEssential": true,
+      "bucketUrl": "https://ama-sdk.amanotes.net/appflyer",
+      "documentation": "https://amanotesjsc.atlassian.net/l/c/yX7v1oxQ",
+      "isEnable": true
+    },
+    {
+      "id": "ama-ironsource",
+      "name": "IronSource Adapter",
+      "installpath": "AmaSDK/AmaIronSource",
+      "isEssential": true,
+      "bucketUrl": "https://ama-sdk.amanotes.net/ironsource",
+      "documentation": "https://amanotesjsc.atlassian.net/l/c/ue1VnsSY",
+      "isEnable": true
+    },
+    {
+      "id": "ama-revenuecat",
+      "name": "RevenueCat Adapter",
+      "installpath": "AmaSDK/AmaRevenueCat",
+      "isEssential": false,
+      "bucketUrl": "https://ama-sdk.amanotes.net/revenuecat",
+      "documentation": "https://amanotesjsc.atlassian.net/l/c/KuJdUmsf",
+      "isEnable": true
+    },
+    {
+      "id": "ama-fb-analytics",
+      "name": "Firebase Analytics",
+      "installpath": "AmaSDK/AmaFBAnalytics",
+      "isEssential": false,
+      "bucketUrl": "https://ama-sdk.amanotes.net/fb-analytics",
+      "documentation": "https://amanotesjsc.atlassian.net/l/c/yX7v1oxQ",
+      "isEnable": true
+    },
+    {
+      "id": "ama-fb-remote-config",
+      "name": "Firebase Remote Config",
+      "installpath": "AmaSDK/AmaFBRemoteConfig",
+      "isEssential": false,
+      "bucketUrl": "https://ama-sdk.amanotes.net/fb-remote-config",
+      "documentation": "https://amanotesjsc.atlassian.net/l/c/yX7v1oxQ",
+      "isEnable": true
+    }
+
+  ]

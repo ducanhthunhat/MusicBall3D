@@ -1,0 +1,124 @@
+{
+  "Skills": 
+  [
+    {
+      "ID": "Rocket",
+      "Rarity": "Legendary",
+      "Type": "Auto",
+      "MaxLevel": 3,
+      "PerfectConditions": [5, 5, 5],
+      "DynamicCondition": 
+      {
+        "ConditionType": "ImpactStrongNote",
+        "Metadata": []
+      },
+      "GachaUnlockCondition": {
+        "UnlockType": "None",
+        "Value": 0
+      },
+      "Metadata": 
+      [
+        [8, 400],
+        [9, 450],
+        [10, 500]
+      ]
+    },
+    {
+      "ID": "EnergyShield",
+      "Rarity": "Epic",
+      "Type": "Auto",
+      "MaxLevel": 3,
+      "PerfectConditions": [5, 5, 5],
+      "DynamicCondition":
+      {
+        "ConditionType": "LossHP",
+        "Metadata": []
+      },
+      "GachaUnlockCondition": {
+        "UnlockType": "None",
+        "Value": 0
+      },
+      "Metadata":
+      [
+        [12, 5],
+        [15, 5],
+        [15, 7]
+      ]
+    },
+    {
+      "ID": "EnergyBoost",
+      "Rarity": "Common",
+      "Type": "Passive",
+      "MaxLevel": 3,
+      "PerfectConditions": [],
+      "DynamicCondition":
+      {
+        "ConditionType": "None",
+        "Metadata": []
+      },
+      "GachaUnlockCondition": {
+        "UnlockType": "None",
+        "Value": 0
+      },
+      "Metadata":
+      [
+        [10],
+        [12],
+        [15]
+      ]
+    },
+    {
+      "ID": "EnergyRegen",
+      "Rarity": "Rare",
+      "Type": "Auto",
+      "MaxLevel": 3,
+      "PerfectConditions": [10, 10, 10],
+      "DynamicCondition":
+      {
+        "ConditionType": "ThresholdHP",
+        "Metadata": [30]
+      },
+      "GachaUnlockCondition": {
+        "UnlockType": "None",
+        "Value": 0
+      },
+      "Metadata":
+      [
+        [2, 10],
+        [2, 12],
+        [3, 10]
+      ]
+    },    
+    {
+      "ID": "Frozen",
+      "Rarity": "Legendary",
+      "Type": "Auto",
+      "MaxLevel": 3,
+      "PerfectConditions": [5, 10, 10],
+      "DynamicCondition":
+      {
+        "ConditionType": "ComboPerfect",
+        "Metadata": [3]
+      },
+      "GachaUnlockCondition": {
+        "UnlockType": "None",
+        "Value": 0
+      },
+      "Metadata":
+      [
+        [6, 2],
+        [7, 3],
+        [8, 4]
+      ]
+    }
+  ],
+  
+  "DrawQuantityByXLevel": 6,
+  "XLevelValue": 2,
+
+  "FixedDrawList": ["Rocket", "EnergyShield", "EnergyBoost", "EnergyRegen", "Frozen", "Rocket"],
+  "GachaPoolRatio": [60, 25, 10, 5], 
+
+  "DrawBasePrice": 200,
+  "DrawIncreasePercent": 0.1
+}

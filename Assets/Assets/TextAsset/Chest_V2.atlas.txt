@@ -1,0 +1,41 @@
+Chest_V2.png
+	size: 1580, 1580
+	filter: Linear, Linear
+	pma: true
+Blue/Body
+	bounds: 2, 729, 477, 451
+Blue/Cap
+	bounds: 481, 559, 483, 250
+Blue/CapOpen
+	bounds: 999, 665, 480, 206
+	offsets: 1, 1, 482, 208
+Golden/Body
+	bounds: 2, 276, 477, 451
+Golden/Cap
+	bounds: 481, 307, 483, 250
+Golden/CapOpen
+	bounds: 487, 98, 480, 207
+	offsets: 1, 1, 482, 209
+Green/Body
+	bounds: 540, 1125, 477, 450
+Green/BoxGlow
+	bounds: 2, 1182, 536, 393
+	offsets: 10, 11, 555, 416
+Green/Cap
+	bounds: 2, 24, 483, 250
+Green/CapGlow
+	bounds: 969, 2, 405, 245
+	offsets: 11, 8, 427, 262
+Green/CapOpen
+	bounds: 966, 457, 480, 206
+	offsets: 1, 1, 482, 208
+Green/VFXInsideGlow
+	bounds: 481, 811, 516, 312
+	offsets: 6, 6, 528, 324
+Purple/Body
+	bounds: 1019, 1124, 477, 451
+Purple/Cap
+	bounds: 999, 873, 483, 249
+Purple/CapOpen
+	bounds: 969, 249, 480, 206
+	offsets: 1, 1, 482, 208

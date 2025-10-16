@@ -1,0 +1,76 @@
+{
+  "MissionData": [
+    {
+      "MissionID": "ActiveSkill",
+      "TargetValue": 100,
+      "FirePoint": 20
+    },
+    {
+      "MissionID": "UpgradeCharacter",
+      "TargetValue": 7,
+      "FirePoint": 20
+    },
+    {
+      "MissionID": "UpgradeTalent",
+      "TargetValue": 10,
+      "FirePoint": 20
+    },
+    {
+      "MissionID": "SpendGem",
+      "TargetValue": 1500,
+      "FirePoint": 20
+    },
+    {
+      "MissionID": "DefeatBoss",
+      "TargetValue": 20,
+      "FirePoint": 20
+    }
+  ],
+  "MilestoneRewardData": [
+    {
+      "PointMilestone": 20,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 150
+        }
+      ]
+    },
+    {
+      "PointMilestone": 40,
+      "Rewards": [
+        {
+          "Type": "Gem",
+          "Value": 15
+        }
+      ]
+    },
+    {
+      "PointMilestone": 60,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 152
+        }
+      ]
+    },
+    {
+      "PointMilestone": 80,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 153
+        }
+      ]
+    },
+    {
+      "PointMilestone": 100,
+      "Rewards": [
+        {
+          "Type": "Coin",
+          "Value": 154
+        }
+      ]
+    }
+  ]
+}

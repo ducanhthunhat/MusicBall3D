@@ -7,9 +7,11 @@ public class UIStartPanel : UICanvas
 {
     public void playGame()
     {
+        //UIManager.Instance.ResumeGame();
+        Time.timeScale = 1;
         UIManager.Instance.CloseUIDirectly<UIStartPanel>();
         UIManager.Instance.OpenUI<UIPauseGame>();
-        UIManager.Instance.ResumeGame();
+      
         BeatManager.Instance.PlayMusic();
     }
 }
