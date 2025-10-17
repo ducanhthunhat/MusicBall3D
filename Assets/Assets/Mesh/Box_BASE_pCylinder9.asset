@@ -2,12 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!43 &4300000
 Mesh:
-  serializedVersion: 10
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Box_BASE:pCylinder9
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -25,17 +25,17 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: 1.4850727E-14
+  - e00: 1.4850727e-14
     e01: -20.417126
     e02: 8.890967
     e03: 70.5708
-    e10: 4.7860165E-15
+    e10: 4.7860165e-15
     e11: 8.890967
     e12: 20.417126
     e13: 8.761845
     e20: -22.269
-    e21: -1.170492E-14
-    e22: 1.0317214E-14
+    e21: -1.170492e-14
+    e22: 1.0317214e-14
     e23: -0.4268331
     e30: 0
     e31: 0
@@ -47,13 +47,13 @@ Mesh:
   - m_Min: {x: -1.6417694, y: -1.6228771, z: -29.764757}
     m_Max: {x: 1.6154633, y: 1.6343555, z: 28.911093}
   m_VariableBoneCountWeights:
-    m_Data:
+    m_Data: 
   m_MeshCompression: 1
   m_IsReadable: 0
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer:
+  m_IndexBuffer: 
   m_VertexData:
     serializedVersion: 3
     m_VertexCount: 0
@@ -115,7 +115,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 0
-    _typelessdata:
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 324
@@ -157,11 +157,11 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 108
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 384
@@ -172,8 +172,9 @@ Mesh:
     m_Center: {x: 0, y: 2.7490387, z: -1.6259747}
     m_Extent: {x: 1.317436, y: 0.07859352, z: 0.078593105}
   m_MeshUsageFlags: 1
-  m_BakedConvexCollisionMesh:
-  m_BakedTriangleCollisionMesh:
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 15.104193
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: -1
@@ -181,4 +182,4 @@ Mesh:
     serializedVersion: 2
     offset: 0
     size: 0
-    path:
+    path: 

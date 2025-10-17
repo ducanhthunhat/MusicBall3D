@@ -62,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
 
             currentTween = transform.DOMoveY(targetY, 0.3f)
                 .SetEase(Ease.OutQuad)
+                .SetLink(gameObject, LinkBehaviour.KillOnDestroy)
+
                 .OnComplete(() =>
                 {
                     transform.position = new Vector3(transform.position.x, targetY, transform.position.z);
@@ -76,5 +78,10 @@ public class PlayerMovement : MonoBehaviour
             currentTween.Kill();
             currentTween = null;
         }
+    }
+
+     private void OnDestroy()
+    {
+        StopTween();
     }
 }

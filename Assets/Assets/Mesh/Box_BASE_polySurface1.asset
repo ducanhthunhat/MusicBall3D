@@ -2,12 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!43 &4300000
 Mesh:
-  serializedVersion: 10
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Box_BASE:polySurface1
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -25,18 +25,18 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: 3.4737387E-14
+  - e00: 3.4737387e-14
     e01: -68.74313
-    e02: -3.4E-44
+    e02: -3.4e-44
     e03: 75.7998
-    e10: 3.4737387E-14
-    e11: 1.7553551E-29
+    e10: 3.4737387e-14
+    e11: 1.7553551e-29
     e12: 68.74313
-    e13: -1.935547E-29
+    e13: -1.935547e-29
     e20: -68.74313
-    e21: -3.4737387E-14
-    e22: 3.4737387E-14
-    e23: 3.8303274E-14
+    e21: -3.4737387e-14
+    e22: 3.4737387e-14
+    e23: 3.8303274e-14
     e30: 0
     e31: 0
     e32: 0
@@ -47,13 +47,13 @@ Mesh:
   - m_Min: {x: -48.086548, y: -35.997837, z: -35.997807}
     m_Max: {x: 12.538841, y: 35.997807, z: 35.997837}
   m_VariableBoneCountWeights:
-    m_Data:
+    m_Data: 
   m_MeshCompression: 1
   m_IsReadable: 0
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer:
+  m_IndexBuffer: 
   m_VertexData:
     serializedVersion: 3
     m_VertexCount: 0
@@ -115,7 +115,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 0
-    _typelessdata:
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 684
@@ -157,11 +157,11 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 228
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 492
@@ -172,8 +172,9 @@ Mesh:
     m_Center: {x: 0, y: 1.3612069, z: 0}
     m_Extent: {x: 0.5236594, y: 0.44095844, z: 0.5236594}
   m_MeshUsageFlags: 1
-  m_BakedConvexCollisionMesh:
-  m_BakedTriangleCollisionMesh:
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 422.05707
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: -1
@@ -181,4 +182,4 @@ Mesh:
     serializedVersion: 2
     offset: 0
     size: 0
-    path:
+    path: 

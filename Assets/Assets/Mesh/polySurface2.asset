@@ -2,12 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!43 &4300000
 Mesh:
-  serializedVersion: 10
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: polySurface2
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -27,14 +27,14 @@ Mesh:
   m_BindPose:
   - e00: -0.00323623
     e01: 0.99999493
-    e02: 2.7755576E-15
+    e02: 2.7755576e-15
     e03: -0.33971414
     e10: -0.99999493
     e11: -0.00323623
-    e12: 5.551115E-15
+    e12: 5.551115e-15
     e13: -0.7530609
-    e20: -3.469447E-16
-    e21: -2.7755576E-15
+    e20: -3.469447e-16
+    e21: -2.7755576e-15
     e22: 1
     e23: -0.0068377997
     e30: 0
@@ -47,13 +47,13 @@ Mesh:
   - m_Min: {x: 0.12323412, y: -0.12721568, z: -0.11789401}
     m_Max: {x: 0.40185568, y: 0.12780446, z: 0.118724465}
   m_VariableBoneCountWeights:
-    m_Data:
+    m_Data: 
   m_MeshCompression: 1
   m_IsReadable: 0
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer:
+  m_IndexBuffer: 
   m_VertexData:
     serializedVersion: 3
     m_VertexCount: 0
@@ -115,7 +115,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 0
-    _typelessdata:
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 438
@@ -157,11 +157,11 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 146
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 660
@@ -172,8 +172,9 @@ Mesh:
     m_Center: {x: -0.7555834, y: 0.5997049, z: 0.0072530583}
     m_Extent: {x: 0.12751195, y: 0.13920118, z: 0.11831083}
   m_MeshUsageFlags: 1
-  m_BakedConvexCollisionMesh:
-  m_BakedTriangleCollisionMesh:
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 14.695114
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: -1
@@ -181,4 +182,4 @@ Mesh:
     serializedVersion: 2
     offset: 0
     size: 0
-    path:
+    path: 

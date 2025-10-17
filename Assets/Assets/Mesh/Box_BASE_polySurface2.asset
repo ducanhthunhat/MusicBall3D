@@ -2,12 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!43 &4300000
 Mesh:
-  serializedVersion: 10
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Box_BASE:polySurface2
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -17,7 +17,7 @@ Mesh:
     firstVertex: 0
     vertexCount: 104
     localAABB:
-      m_Center: {x: 1.5795231E-06, y: 2.8811026, z: -2.2053719E-06}
+      m_Center: {x: 0.0000015795231, y: 2.8811026, z: -0.0000022053719}
       m_Extent: {x: 0.52033937, y: 0.0514071, z: 0.52033937}
   m_Shapes:
     vertices: []
@@ -25,17 +25,17 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: 4.584335E-14
+  - e00: 4.584335e-14
     e01: 0.065404564
     e02: -68.7431
     e03: -35.24915
-    e10: 1.477416E-14
+    e10: 1.477416e-14
     e11: -68.7431
     e12: -0.065404564
     e13: 194.65965
     e20: -68.74313
-    e21: -1.4730538E-14
-    e22: -4.5857385E-14
+    e21: -1.4730538e-14
+    e22: -4.5857385e-14
     e23: -0.4267604
     e30: 0
     e31: 0
@@ -47,13 +47,13 @@ Mesh:
   - m_Min: {x: -70.8336, y: -6.9641876, z: -36.196533}
     m_Max: {x: 0.7125435, y: 0.17163086, z: 35.342922}
   m_VariableBoneCountWeights:
-    m_Data:
+    m_Data: 
   m_MeshCompression: 1
   m_IsReadable: 0
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer:
+  m_IndexBuffer: 
   m_VertexData:
     serializedVersion: 3
     m_VertexCount: 0
@@ -115,7 +115,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 0
-    _typelessdata:
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 312
@@ -157,11 +157,11 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 104
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 228
@@ -169,11 +169,12 @@ Mesh:
       m_BitSize: 7
     m_UVInfo: 5
   m_LocalAABB:
-    m_Center: {x: 1.5795231E-06, y: 2.8811026, z: -2.2053719E-06}
+    m_Center: {x: 0.0000015795231, y: 2.8811026, z: -0.0000022053719}
     m_Extent: {x: 0.52034265, y: 0.051410392, z: 0.52034265}
   m_MeshUsageFlags: 1
-  m_BakedConvexCollisionMesh:
-  m_BakedTriangleCollisionMesh:
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 131.60274
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: -1
@@ -181,4 +182,4 @@ Mesh:
     serializedVersion: 2
     offset: 0
     size: 0
-    path:
+    path: 
