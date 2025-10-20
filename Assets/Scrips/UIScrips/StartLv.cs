@@ -8,6 +8,5 @@ public class StartUI : UICanvas
     public void Start()
     {
         UIManager.Instance.OpenUI<UIStartPanel>();
-        Time.timeScale = 0;
     }
 }
