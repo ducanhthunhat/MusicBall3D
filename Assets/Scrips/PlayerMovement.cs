@@ -1,65 +1,88 @@
 using UnityEngine;
 using DG.Tweening;
+
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float fallDistance = 5f;    // Độ sâu khi rơi
-    [SerializeField] private float fallDuration = 0.35f;   // Thời gian rơi
-    [SerializeField] private float hoverOffset = 4f;    // Độ cao cố định khi lơ lửng
-    [SerializeField] private float moveSmooth = 8f;      // Độ mượt khi di chuyển
-    [SerializeField] private float minX = -5f;            // Giới hạn trái
-    [SerializeField] private float maxX = 5f;             // Giới hạn phải
-    [SerializeField] private float raycastDistance = 0.6f; // Khoảng cách raycast để kiểm tra mặt đất
-    private Tween currentTween;
-    private Camera mainCam;
+    [Header("Settings")]
+    [SerializeField] private float fallDistance = 5f;
+    [SerializeField] private float fallDuration = 0.35f;
+    [SerializeField] private float hoverOffset = 4f;
+    [SerializeField] private float moveSmooth = 0.25f;  // thời gian trễ khi theo tay (nhỏ = nhanh, lớn = chậm)
+    [SerializeField] private float minX = -5f;
+    [SerializeField] private float maxX = 5f;
+    [SerializeField] private float raycastDistance = 0.6f;
     [SerializeField] private LayerMask Tile;
+    [SerializeField] private LayerMask CheckDistance;
 
+    private Tween currentTween;
+    private Tween moveTween;
+    private Camera mainCam;
     private bool CanJump;
-    private void Start()
+    [SerializeField] private float tileDistance;
 
+    private void Start()
     {
         mainCam = Camera.main;
     }
+
     private void Update()
     {
+        // Kiểm tra có đang đứng trên tile hay không
         CanJump = Physics.Raycast(transform.position, Vector3.down, raycastDistance, Tile);
+
+        // Kiểm tra tile phía trước (khoảng cách)
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.forward, out hit, raycastDistance + 30f, CheckDistance))
+        {
+            tileDistance = hit.distance;
+        }
+        else
+        {
+            tileDistance = -1f; // Không thấy tile nào phía trước
+        }
+
 #if UNITY_EDITOR || UNITY_STANDALONE
-        MoveWithMouse(); // Dành cho khi test trên PC
+        MoveWithMouse();
 #else
         MoveWithTouch();
 #endif
         JumpBack();
     }
+
     private void MoveWithTouch()
     {
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            // Lấy vị trí chạm trên màn hình
             Vector3 touchPos = touch.position;
             Vector3 worldPos = mainCam.ScreenToWorldPoint(
                 new Vector3(touchPos.x, touchPos.y, Mathf.Abs(mainCam.transform.position.z - transform.position.z))
-
             );
+
             float targetX = Mathf.Clamp(worldPos.x, minX, maxX);
-            Vector3 targetPos = new Vector3(targetX, transform.position.y, transform.position.z);
-            // Di chuyển mượt theo ngón tay
-            transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * moveSmooth);
+            MoveSmoothly(targetX);
         }
     }
 
     private void MoveWithMouse()
     {
         Vector3 mousePos = Input.mousePosition;
-
         Vector3 worldPos = mainCam.ScreenToWorldPoint(
-
             new Vector3(mousePos.x, mousePos.y, Mathf.Abs(mainCam.transform.position.z - transform.position.z))
-
         );
-        float targetX = Mathf.Clamp(worldPos.x, minX, maxX);
-        Vector3 targetPos = new Vector3(targetX, transform.position.y, transform.position.z);
-        transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * moveSmooth);
 
+        float targetX = Mathf.Clamp(worldPos.x, minX, maxX);
+        MoveSmoothly(targetX);
+    }
+
+    private void MoveSmoothly(float targetX)
+    {
+        if (moveTween != null && moveTween.IsActive()) moveTween.Kill();
+
+        // Hiệu ứng di chuyển mượt + có trễ nhẹ
+        moveTween = transform.DOMoveX(targetX, moveSmooth)
+            .SetEase(Ease.OutQuad)
+            .SetLink(gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -67,7 +90,6 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("CheckFall"))
         {
             StopTween();
-            // Rơi thẳng xuống
             currentTween = transform.DOMoveY(transform.position.y - fallDistance, fallDuration)
                 .SetEase(Ease.InQuad)
                 .SetLink(gameObject);
@@ -77,24 +99,46 @@ public class PlayerMovement : MonoBehaviour
     private void JumpBack()
     {
         if (!CanJump) return;
+        StopTween();
+
+        float targetY = hoverOffset;
+
+        // Nếu có tile phía trước thì điều chỉnh độ cao
+        if (Physics.Raycast(transform.position, Vector3.forward, out RaycastHit hit, raycastDistance + 30f, CheckDistance))
+        {
+            tileDistance = hit.distance;
+
+            // Điều chỉnh theo khoảng cách
+            if (tileDistance > 4f)
+                targetY += 2f;
+            else if (tileDistance < 1f)
+                targetY -= 1f;
+        }
         else
         {
-            StopTween();
-            // Nhảy trở lại vị trí lơ lửng
-            currentTween = transform.DOMoveY(hoverOffset, fallDuration)
-
-                .SetEase(Ease.OutQuad)
-
-                .SetLink(gameObject);
+            targetY = hoverOffset;
         }
+
+        // Hiệu ứng bay lên rồi rơi nhẹ
+        Sequence seq = DOTween.Sequence();
+
+        // Bay lên nhanh
+        seq.Append(transform.DOMoveY(targetY, fallDuration * 0.6f)
+            .SetEase(Ease.OutQuad));
+
+        seq.Append(transform.DOMoveY(targetY - 4f, 5f)
+            .SetEase(Ease.OutCubic));
+
+        seq.SetLink(gameObject);
+        currentTween = seq;
     }
+
 
     private void StopTween()
     {
         if (currentTween != null && currentTween.IsActive())
         {
             currentTween.Kill();
-
             currentTween = null;
         }
     }
@@ -102,11 +146,14 @@ public class PlayerMovement : MonoBehaviour
     private void OnDestroy()
     {
         StopTween();
+        if (moveTween != null && moveTween.IsActive())
+            moveTween.Kill();
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * raycastDistance);
+        Gizmos.DrawLine(transform.position, transform.position + Vector3.forward * (raycastDistance + 30f));
     }
-
 }

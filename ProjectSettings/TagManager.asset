@@ -7,6 +7,8 @@ TagManager:
   - Tile
   - EndPool
   - CheckFall
+  - Platform
+  - IgnorePreview
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - UI
   - Player
   - Tile
-  - 
+  - CheckDistance
   - 
   - 
   - 
