@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5669482149429883097}
   - component: {fileID: 8536600461048085005}
   - component: {fileID: -4428329175559040691}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -172,5 +172,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.285215, y: 23.282602, z: 0.09927386}
-  m_Center: {x: -0.004508972, y: 11.141302, z: -0.12156251}
+  m_Size: {x: 10.285215, y: 23.282602, z: 0.15604621}
+  m_Center: {x: -0.004508972, y: 11.141302, z: -0.18819699}
