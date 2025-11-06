@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private Tween moveTween;
     private Camera mainCam;
     private bool CanJump;
+    private Tile tile;
     [SerializeField] private float tileDistance;
 
     private void Start()
@@ -101,38 +102,48 @@ public class PlayerMovement : MonoBehaviour
         if (!CanJump) return;
         StopTween();
 
-        float targetY = hoverOffset;
-
-        // Nếu có tile phía trước thì điều chỉnh độ cao
-        if (Physics.Raycast(transform.position, Vector3.forward, out RaycastHit hit, raycastDistance + 30f, CheckDistance))
+        // Raycast kiểm tra tile phía trước
+        if (Physics.Raycast(transform.position, Vector3.forward, out RaycastHit hit, 30f, CheckDistance))
         {
             tileDistance = hit.distance;
 
-            // Điều chỉnh theo khoảng cách
-            if (tileDistance > 4f)
-                targetY += 2f;
-            else if (tileDistance < 1f)
-                targetY -= 1f;
+            Tile tile = hit.collider.GetComponent<Tile>();
+            if (tile == null) return;
+
+            float tileSpeed = tile.tileSpeed;
+
+            // Tính thời gian tile đến player
+            float timeToReachPlayer = tileDistance / tileSpeed;
+
+            // Giới hạn để tránh giá trị cực đoan
+            timeToReachPlayer = Mathf.Clamp(timeToReachPlayer, 0.3f, 2f);
+
+            // Độ cao nhảy tỉ lệ thuận với thời gian tile đến
+            float minJump = 2f;
+            float maxJump = 8f;
+            float jumpHeight = Mathf.Lerp(minJump, maxJump, Mathf.InverseLerp(0.3f, 2f, timeToReachPlayer));
+
+
+            // Tổng thời gian nhảy = thời gian tile đến player
+            float totalJumpTime = timeToReachPlayer;
+
+            // Bay lên và rơi xuống chia đều 2 giai đoạn
+            float halfTime = totalJumpTime / 2f;
+
+            Sequence seq = DOTween.Sequence();
+
+            // Bay lên nhanh
+            seq.Append(transform.DOMoveY(transform.position.y + jumpHeight, halfTime)
+                .SetEase(Ease.OutQuad));
+
+            // Rơi xuống đúng lúc tile tới
+            seq.Append(transform.DOMoveY(transform.position.y, halfTime)
+                .SetEase(Ease.InQuad));
+
+            seq.SetLink(gameObject);
+            currentTween = seq;
         }
-        else
-        {
-            targetY = hoverOffset;
-        }
-
-        // Hiệu ứng bay lên rồi rơi nhẹ
-        Sequence seq = DOTween.Sequence();
-
-        // Bay lên nhanh
-        seq.Append(transform.DOMoveY(targetY, fallDuration * 0.6f)
-            .SetEase(Ease.OutQuad));
-
-        seq.Append(transform.DOMoveY(targetY - 4f, 5f)
-            .SetEase(Ease.OutCubic));
-
-        seq.SetLink(gameObject);
-        currentTween = seq;
     }
-
 
     private void StopTween()
     {

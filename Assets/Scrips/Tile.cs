@@ -3,7 +3,7 @@ using DG.Tweening;
 
 public class Tile : MonoBehaviour
 {
-    [SerializeField] private float tileSpeed = 2f;
+    [SerializeField] public float tileSpeed = 2f;
     [SerializeField] private float moveDistance = 50f;
 
     private void OnEnable()
