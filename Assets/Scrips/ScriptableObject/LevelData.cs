@@ -1,16 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "LevelData", menuName = "Game/LevelData")]
+[System.Serializable]
+public class TileData
+{
+    public float xPosition;   // trục X để player hạ ball
+    public float distanceZ;   // khoảng cách Z đến tile tiếp theo
+}
+
+[CreateAssetMenu(fileName = "LevelData", menuName = "MusicBallHop/LevelData")]
 public class LevelData : ScriptableObject
 {
-    [Header("Thông tin cơ bản")]
-    public string levelName;
-    public int levelIndex;
-    public GameObject levelPrefab;
-    public Sprite previewImage;
-
-    [Header("Cài đặt gameplay")]
-    public float timeLimit = 60f;
-    public int enemyCount = 5;
-    public int scoreToWin = 100;
+    public List<TileData> tiles;
 }

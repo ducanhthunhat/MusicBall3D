@@ -1,48 +1,38 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PoolManager : MonoBehaviour
 {
     public static PoolManager Instance;
-    [SerializeField] private GameObject objPrefab;
-    [SerializeField] private List<GameObject> Tiles;
-    [SerializeField] private int poolSize = 10;
-    [SerializeField] private Transform poolParent;
+    public GameObject tilePrefab;
+    public int poolSize = 10;
+    public Transform poolParent;
 
-    void Awake()
+    private List<GameObject> tiles;
+
+    private void Awake() => Instance = this;
+
+    private void Start()
     {
-        Instance = this;
-    }
-    public void Start()
-    {
-        Tiles = new List<GameObject>();
+        tiles = new List<GameObject>();
         for (int i = 0; i < poolSize; i++)
         {
-            GameObject obj = Instantiate(objPrefab, poolParent);
-            obj.SetActive(false);
-            Tiles.Add(obj);
+            GameObject t = Instantiate(tilePrefab, poolParent);
+            t.SetActive(false);
+            tiles.Add(t);
         }
     }
 
     public GameObject GetObject()
     {
-        foreach (var obj in Tiles)
-        {
-            if (!obj.activeInHierarchy)
-            {
-                return obj;
-            }
-        }
-        GameObject newObj = Instantiate(objPrefab, poolParent);
-        newObj.SetActive(false);
-        Tiles.Add(newObj);
-        return newObj;
+        foreach (var t in tiles)
+            if (!t.activeInHierarchy) return t;
+
+        GameObject newT = Instantiate(tilePrefab, poolParent);
+        newT.SetActive(false);
+        tiles.Add(newT);
+        return newT;
     }
 
-    public void ReturnObject(GameObject obj)
-    {
-        obj.SetActive(false);
-    }
-
+    public void ReturnObject(GameObject t) => t.SetActive(false);
 }

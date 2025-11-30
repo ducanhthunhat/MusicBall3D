@@ -70747,7 +70747,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -204405,7 +204405,7 @@ MonoBehaviour:
   moveSmooth: 0.25
   minX: -3
   maxX: 3
-  raycastDistance: 0.52
+  raycastDistance: 0.51
   Tile:
     serializedVersion: 2
     m_Bits: 128

@@ -1,47 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TileSpawner : MonoBehaviour
 {
-    [SerializeField] private Transform spawnPoint;
-    [SerializeField] private AudioSource musicSource;
-    [SerializeField] private SongData songData;
+    public LevelData levelData;      // Level hiện tại
+    public float startZ = 10f;       // Z bắt đầu spawn
+    public float tileSpeed = 5f;     // tốc độ di chuyển tile về player
+    public BallPlayerController ballController;
 
-    private int currentBeatIndex = 0;
+    private List<Transform> spawnedTiles = new List<Transform>();
 
-    private void Start()
+    void Start()
     {
-        if (songData == null || songData.beatTimings == null || songData.beatTimings.Length == 0)
-        {
-            Debug.LogError("⚠️ Chưa gán SongData hoặc dữ liệu beat trống!");
-            enabled = false;
-            return;
-        }
-
-        musicSource.clip = songData.songClip;
+        StartCoroutine(SpawnTiles());
     }
 
-    private void Update()
+    private IEnumerator SpawnTiles()
     {
-        if (!musicSource.isPlaying || songData.beatTimings == null)
-            return;
+        float spawnZ = startZ;
 
-        // Kiểm tra nếu đến thời gian của beat tiếp theo
-        if (currentBeatIndex < songData.beatTimings.Length &&
-            musicSource.time >= songData.beatTimings[currentBeatIndex])
+        foreach (var tileData in levelData.tiles)
         {
-            float xPos = songData.xPositions[currentBeatIndex];
-            SpawnTile(xPos);
-            currentBeatIndex++;
+            // Lấy tile từ PoolManager
+            GameObject tile = PoolManager.Instance.GetObject();
+            tile.transform.position = new Vector3(tileData.xPosition, 0f, spawnZ);
+            tile.SetActive(true);
+
+            if (!tile.TryGetComponent<TileMover>(out TileMover mover))
+                mover = tile.AddComponent<TileMover>();
+
+            mover.speed = tileSpeed;
+
+            spawnedTiles.Add(tile.transform);
+
+            // cập nhật spawnZ cho tile tiếp theo dựa trên distanceZ
+            spawnZ += tileData.distanceZ;
+
+            yield return null; // hoặc WaitForSeconds nếu muốn delay spawn
         }
-    }
 
-    private void SpawnTile(float xPos)
-    {
-        GameObject tile = PoolManager.Instance.GetObject();
-        Vector3 spawnPos = spawnPoint.position;
-        spawnPos.x = xPos;
-
-        tile.transform.position = spawnPos;
-        tile.SetActive(true);
+        // gửi danh sách tile cho BallPlayerController
+        if (ballController != null)
+            ballController.SetTiles(spawnedTiles.ToArray());
     }
 }

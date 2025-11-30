@@ -10,12 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c64c0a54783bfcc49a841959c09aa582, type: 3}
-  m_Name: Level2
+  m_Name: lvv1
   m_EditorClassIdentifier: 
-  levelName: 2
-  levelIndex: 2
-  levelPrefab: {fileID: 902327752842979360, guid: 03c1920c92730d14fa71fe00297f8cb6, type: 3}
-  previewImage: {fileID: 0}
-  timeLimit: 60
-  enemyCount: 0
-  scoreToWin: 100
+  tiles: []

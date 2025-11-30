@@ -1,62 +1,42 @@
+using System.Collections;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [Header("Cơ sở dữ liệu level")]
-    public LevelDatabase levelDatabase;
-    public static LevelManager Instance { get; private set; }
+    public static LevelManager Instance;
+    public LevelData[] levels;
+    public float startZ = 5f;
 
-    private GameObject currentLevelInstance;
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
+    private void Awake() => Instance = this;
 
     public void LoadLevel(int index)
     {
-        if (levelDatabase == null || levelDatabase.allLevels.Length == 0)
+        if (index < 0 || index >= levels.Length)
         {
-            Debug.LogError("Chưa gán LevelDatabase hoặc chưa có level!");
+            Debug.LogError("Level index out of range!");
             return;
         }
 
-        if (index < 0 || index >= levelDatabase.allLevels.Length)
-        {
-            Debug.LogWarning("Level index không hợp lệ!");
-            return;
-        }
-
-        // Xóa level cũ nếu có
-        if (currentLevelInstance != null)
-            Destroy(currentLevelInstance);
-
-        // Lấy dữ liệu level
-        LevelData data = levelDatabase.allLevels[index];
-        Debug.Log($"Đang load: {data.levelName}");
-
-        // Tạo level từ prefab
-        currentLevelInstance = Instantiate(data.levelPrefab, Vector3.zero, Quaternion.identity, null);
+        StopAllCoroutines();
+        StartCoroutine(SpawnTiles(levels[index]));
     }
-    public void UnloadCurrentLevel()
+
+    private IEnumerator SpawnTiles(LevelData levelData)
     {
-        if (currentLevelInstance != null)
+        float spawnZ = startZ;
+
+        foreach (var tileData in levelData.tiles)
         {
-            Destroy(currentLevelInstance);
-            currentLevelInstance = null;
-            Debug.Log("Đã tắt level hiện tại và trở về menu.");
-        }
-        else
-        {
-            Debug.LogWarning("Không có level nào đang được load để tắt!");
+            GameObject t = PoolManager.Instance.GetObject();
+            t.transform.position = new Vector3(tileData.xPosition, 0f, spawnZ);
+            t.SetActive(true);
+
+            if (!t.TryGetComponent<TileMover>(out _))
+                t.AddComponent<TileMover>();
+
+            spawnZ += tileData.distanceZ;
+
+            yield return new WaitForSeconds(0.1f); // delay spawn tile
         }
     }
-
-    public int LevelCount => levelDatabase?.allLevels.Length ?? 0;
 }

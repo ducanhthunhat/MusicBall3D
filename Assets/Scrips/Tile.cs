@@ -1,23 +1,15 @@
 using UnityEngine;
-using DG.Tweening;
 
-public class Tile : MonoBehaviour
+public class TileMover : MonoBehaviour
 {
-    [SerializeField] public float tileSpeed = 2f;
-    [SerializeField] private float moveDistance = 50f;
+    public float speed = 5f;    // tốc độ tile di chuyển về player
+    public float destroyZ = -5f;
 
-    private void OnEnable()
+    void Update()
     {
-        transform.DOMoveZ(transform.position.z - moveDistance, moveDistance / tileSpeed)
-            .SetEase(Ease.Linear)
-            .OnComplete(() =>
-            {
-                PoolManager.Instance.ReturnObject(gameObject);
-            });
-    }
+        transform.Translate(0, 0, -speed * Time.deltaTime);
 
-    private void OnDisable()
-    {
-        transform.DOKill();
+        if (transform.position.z < destroyZ)
+            PoolManager.Instance.ReturnObject(gameObject);
     }
 }
