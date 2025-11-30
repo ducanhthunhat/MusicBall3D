@@ -22295,9 +22295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e317593d5abcfaf4f834f8804df0f35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objPrefab: {fileID: 4102274490045724421, guid: ba4a895fe300fd94a87053d631965539, type: 3}
-  Tiles:
-  - {fileID: 0}
+  tilePrefab: {fileID: 4102274490045724421, guid: ba4a895fe300fd94a87053d631965539, type: 3}
   poolSize: 10
   poolParent: {fileID: 1948351542}
 --- !u!4 &384873247
@@ -90519,6 +90517,53 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1211387567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211387569}
+  - component: {fileID: 1211387568}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1211387568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211387567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb985d9723293804a85a0e7e06e34c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 11400000, guid: 6e9c88a85c1eb6e4bbd39b5033d1edc8, type: 2}
+  startZ: 5
+--- !u!4 &1211387569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211387567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.158422, y: 8.270418, z: 4.12852}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1218343511
 GameObject:
   m_ObjectHideFlags: 0
@@ -130675,9 +130720,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56a02d0f3b60267418e0950359f72c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1541098597}
-  musicSource: {fileID: 1865949135}
-  songData: {fileID: 11400000, guid: f4daf559c70b557418d53aed92dc3b9b, type: 2}
+  levelData: {fileID: 11400000, guid: 6e9c88a85c1eb6e4bbd39b5033d1edc8, type: 2}
+  startZ: 10
+  tileSpeed: 5
+  ballController: {fileID: 8334140069548832577}
 --- !u!4 &1865949134
 Transform:
   m_ObjectHideFlags: 0
@@ -130687,7 +130733,7 @@ Transform:
   m_GameObject: {fileID: 1865949132}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6}
+  m_LocalPosition: {x: 0, y: 0, z: 8.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -203484,7 +203530,7 @@ GameObject:
   - component: {fileID: 8334140069548832579}
   - component: {fileID: 8334140069548832578}
   m_Layer: 6
-  m_Name: ModelBall108_Dragon
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204399,20 +204445,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec6940ddf1b04748bcdc3e642dd8c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDistance: 3
-  fallDuration: 0.35
-  hoverOffset: 2
-  moveSmooth: 0.25
-  minX: -3
-  maxX: 3
-  raycastDistance: 0.51
-  Tile:
-    serializedVersion: 2
-    m_Bits: 128
-  CheckDistance:
-    serializedVersion: 2
-    m_Bits: 256
-  tileDistance: 0
+  mouseSpeed: 3
+  minHeight: 1
+  maxHeight: 3
+  maxDistance: 5
+  xTolerance: 0.5
+  jumpSpeed: 5
 --- !u!23 &8334140069548832578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -205407,3 +205445,4 @@ SceneRoots:
   - {fileID: 1683633609}
   - {fileID: 8334140069548832575}
   - {fileID: 764683222}
+  - {fileID: 1211387569}

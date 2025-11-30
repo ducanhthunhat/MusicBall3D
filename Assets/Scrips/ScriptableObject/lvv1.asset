@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64c0a54783bfcc49a841959c09aa582, type: 3}
   m_Name: lvv1
   m_EditorClassIdentifier: 
-  tiles: []
+  tiles:
+  - xPosition: 2
+    distanceZ: 2
+  - xPosition: 2
+    distanceZ: 2
+  - xPosition: 0
+    distanceZ: 2
+  - xPosition: -2
+    distanceZ: 1
+  - xPosition: 0
+    distanceZ: 2
+  - xPosition: 0
+    distanceZ: 2
+  - xPosition: 0
+    distanceZ: 2
+  - xPosition: 0
+    distanceZ: 2
+  - xPosition: -2
+    distanceZ: 4
