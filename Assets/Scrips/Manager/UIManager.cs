@@ -104,12 +104,10 @@ public class UIManager : Singleton<UIManager>
         if (isPaused)
         {
             Time.timeScale = 0;
-            BeatManager.Instance.PauseMusic();   // 🔇 Dừng nhạc
         }
         else
         {
             Time.timeScale = 1;
-            BeatManager.Instance.ResumeMusic();  // 🔊 Tiếp tục nhạc
         }
     }
 
