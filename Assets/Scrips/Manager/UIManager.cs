@@ -100,29 +100,13 @@ public class UIManager : Singleton<UIManager>
     public void PauseGame()
     {
         isPaused = !isPaused;
-
-        if (isPaused)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
+        Time.timeScale = isPaused ? 0 : 1;
     }
-
 
     public void ResumeGame()
     {
         isPaused = false;
         Time.timeScale = 1;
-    }
-
-    public void ResetLevel()
-    {
-        Time.timeScale = 1f;
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
     }
 
     public void QuitGame()
@@ -132,5 +116,11 @@ public class UIManager : Singleton<UIManager>
 #else
         Application.Quit();
 #endif
+    }
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }

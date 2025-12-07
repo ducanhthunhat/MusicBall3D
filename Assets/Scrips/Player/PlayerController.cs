@@ -6,10 +6,10 @@ public class PlayerController : MonoBehaviour
     private int currentLane = 1;
     private float[] lanes = { -2f, 0f, 2f };
 
-    public float moveTime = 0.35f;   // tăng nhẹ để mượt hơn
+    public float moveTime = 0.35f;
     private Tweener moveTween;
 
-    private float tiltAngle = 20f;   // góc nghiêng khi đổi lane
+    private float tiltAngle = 20f;
     private float tiltTime = 0.2f;
 
     void Update()
@@ -22,8 +22,15 @@ public class PlayerController : MonoBehaviour
 
         SwipeControl();
     }
+    public void OnEnable()
+    {
+        PlayerShotting.onPlayerShoot += PlayerShoot;
+    }
+    public void OnDisable()
+    {
+        PlayerShotting.onPlayerShoot -= PlayerShoot;
+    }
 
-    // Swipe điều khiển
     private Vector2 startPos;
     private float minSwipe = 100f;
     void SwipeControl()
@@ -45,7 +52,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // HIỆU ỨNG MƯỢT HƠN
     void ChangeLane(int direction)
     {
         int oldLane = currentLane;
@@ -55,18 +61,20 @@ public class PlayerController : MonoBehaviour
 
         moveTween?.Kill();
 
-        // nghiêng khi đổi lane
         float targetTilt = direction * -tiltAngle;
         transform.DORotate(new Vector3(0, 0, targetTilt), tiltTime);
 
-        // chạy lane mượt easing
         moveTween = transform
             .DOMoveX(lanes[currentLane], moveTime)
             .SetEase(Ease.OutCubic)
             .OnComplete(() =>
             {
-                // đứng thẳng về lại
                 transform.DORotate(Vector3.zero, 0.15f);
             });
+    }
+
+    public void PlayerShoot()
+    {
+        Debug.Log("Player has shot!");
     }
 }
