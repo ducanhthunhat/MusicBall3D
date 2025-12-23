@@ -6,12 +6,12 @@ public class Bullet : MonoBehaviour
 
     private void OnEnable()
     {
-        Invoke(nameof(Despawn), 3f);
+        Invoke(nameof(Despawn), 5f);
     }
 
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(Vector3.forward * speed);
     }
 
     private void OnTriggerEnter(Collider col)
@@ -22,10 +22,9 @@ public class Bullet : MonoBehaviour
 
         }
     }
-
     void Despawn()
     {
         CancelInvoke();
-        PoolManager.Instance.Despawn(gameObject);
+        GameManger.Instance.objectPool.DestroyBullet(gameObject);
     }
 }

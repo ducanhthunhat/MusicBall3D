@@ -1,56 +1,64 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class TrapHitEffect : MonoBehaviour
+public class TrapHitVFX_Strong : MonoBehaviour
 {
-    [SerializeField] private Renderer rend; // Renderer để nhấp nháy màu
-    private Vector3 initialPos;
-    private Color initialColor;
+    [Header("Renderer")]
+    [SerializeField] private Renderer rend;
+
+    [Header("STRONG SCALE HIT")]
+    public float punchScale = 0.25f;     // MẠNH
+    public float punchTime = 0.18f;
+
+    [Header("FLASH")]
+    public Color hitColor = Color.white;
+    public int flashCount = 3;            // Nhấp nháy nhiều hơn
+
+    private Vector3 baseScale;
+    private Color baseColor;
 
     private void Awake()
     {
-        initialPos = transform.localPosition;
+        baseScale = transform.localScale;
 
         if (rend == null)
             rend = GetComponent<Renderer>();
 
         if (rend != null)
-            initialColor = rend.material.color;
+            baseColor = rend.material.color;
     }
 
-    public void PlayHitEffect()
+    public void PlayHit()
     {
-        // Dừng mọi tween cũ
         transform.DOKill();
-        if (rend != null)
-            rend.material.DOKill();
+        if (rend != null) rend.material.DOKill();
 
         Sequence seq = DOTween.Sequence();
 
-        // Rung nhẹ theo X ±0.05
-        seq.Append(transform.DOLocalMoveX(initialPos.x + 0.05f, 0.05f));
-        seq.Append(transform.DOLocalMoveX(initialPos.x - 0.05f, 0.05f));
-        seq.Append(transform.DOLocalMoveX(initialPos.x, 0.05f));
+        // 💥 RUNG SCALE MẠNH (giống bắn tường FPS)
+        seq.Append(transform.DOPunchScale(
+            new Vector3(0.18f, 0.18f, punchScale),
+            punchTime,
+            vibrato: 12,
+            elasticity: 0.9f
+        ));
 
-        // Nhấp nháy màu trắng nhẹ
+        // ⚡ FLASH GẮT
         if (rend != null)
         {
-            seq.Join(rend.material.DOColor(Color.white, 0.05f)
-                .SetLoops(2, LoopType.Yoyo)
-                .OnComplete(() => rend.material.color = initialColor));
+            seq.Join(
+                rend.material.DOColor(hitColor, 0.04f)
+                    .SetLoops(flashCount * 2, LoopType.Yoyo)
+                    .OnComplete(() => rend.material.color = baseColor)
+            );
         }
-    }
-
-    public void ResetEffect()
-    {
-        transform.localPosition = initialPos;
-        if (rend != null)
-            rend.material.color = initialColor;
     }
 
     private void OnDisable()
     {
         DOTween.Kill(gameObject);
-        ResetEffect();
+        transform.localScale = baseScale;
+        if (rend != null)
+            rend.material.color = baseColor;
     }
 }

@@ -6,47 +6,59 @@ public class PlayerShotting : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
+    private float nextFireTime = 0f;
+    [SerializeField] private float fireRate = 0.15f;
 
     public static event Action onPlayerShoot;
 
-    private int clickCount = 0;
-    private float clickTimer = 0f;
-    private float clickThreshold = 0.2f;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0)) // GIỮ CHUỘT
         {
-            clickCount++;
-
-            if (clickCount == 1)
-            {
-                clickTimer = Time.time;
-            }
-            else if (clickCount == 2 && Time.time - clickTimer <= clickThreshold)
+            if (Time.time >= nextFireTime)
             {
                 Shoot();
-                clickCount = 0;
+                nextFireTime = Time.time + fireRate;
             }
-        }
-
-        if (clickCount == 1 && Time.time - clickTimer > clickThreshold)
-        {
-            clickCount = 0;
         }
     }
 
     private void Shoot()
     {
-        GameObject bullet = PoolManager.Instance.Spawn(
-            bulletPrefab,
+        if (firePoint == null)
+        {
+            Debug.LogError("FirePoint NULL");
+            return;
+        }
+
+        if (GameManger.Instance == null || GameManger.Instance.objectPool == null)
+        {
+            Debug.LogError("GameManger or ObjectPool NULL");
+            return;
+        }
+
+        var bullet = GameManger.Instance.objectPool.GetBullet(
             firePoint.position,
-            firePoint.rotation
+            firePoint.rotation,
+            null
         );
 
-        DOTween.Kill(bullet, complete: false);
+        if (bullet == null)
+        {
+            Debug.LogError("Bullet NULL");
+            return;
+        }
 
+        DOTween.Kill(bullet);
         onPlayerShoot?.Invoke();
-        Debug.Log("Player shot!");
+    }
+
+
+
+
+    private void OnDisable()
+    {
+        DOTween.Kill(gameObject);
     }
 }

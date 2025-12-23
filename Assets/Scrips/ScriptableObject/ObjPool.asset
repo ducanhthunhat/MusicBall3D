@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4493d6a8d8258ae4ba68e312b3e3992b, type: 3}
+  m_Name: ObjPool
+  m_EditorClassIdentifier: 
+  bullet: {fileID: -2858765631053576512, guid: 32f9cab5bd8d3e849ab864705cfb7157, type: 3}
+  Coin: {fileID: -8556731605004944152, guid: d1ea7cedc0061a545843bf566ac55675, type: 3}
+  trap: {fileID: 2793875465111801117, guid: af3e7c67c7fdb1e4aae55a76ec479193, type: 3}
+  boss: {fileID: 2896023071009166864, guid: dfbd742245b73dc43b3afc982734ab83, type: 3}
+  bossSkill: {fileID: 206355815364699750, guid: 02c387ebd1b12184aaacee5c6b47ec58, type: 3}
+  bossSkillWarning: {fileID: -9199499383741404174, guid: fa792056498b1394ea107b838bd16bd1, type: 3}

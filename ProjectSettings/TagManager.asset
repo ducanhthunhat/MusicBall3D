@@ -9,6 +9,12 @@ TagManager:
   - CheckFall
   - Platform
   - IgnorePreview
+  - Bullet
+  - Trap
+  - Queen
+  - Maracas
+  - Dead
+  - Star
   layers:
   - Default
   - TransparentFX

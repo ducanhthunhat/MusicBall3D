@@ -8,7 +8,7 @@ public class CoinMove : MonoBehaviour
         transform.Translate(Vector3.back * speed * Time.deltaTime);
 
         if (transform.position.z < -18f)
-            PoolManager.Instance.Despawn(gameObject);
+            GameManger.Instance.objectPool.DestroyCoin(gameObject);
 
     }
     private void OnTriggerEnter(Collider col)
@@ -20,6 +20,6 @@ public class CoinMove : MonoBehaviour
     void Despawn()
     {
         CancelInvoke();
-        PoolManager.Instance.Despawn(gameObject);
+        GameManger.Instance.objectPool.DestroyCoin(gameObject);
     }
 }

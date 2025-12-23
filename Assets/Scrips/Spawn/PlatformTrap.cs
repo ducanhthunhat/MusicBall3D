@@ -5,8 +5,9 @@ using System.Collections.Generic;
 public class PlatformTrap : MonoBehaviour
 {
     private float[] lanes = { -2f, 0f, 2f };
-    [SerializeField] private GameObject trapPrefab;
-    [SerializeField] private GameObject coinPrefab;
+
+    public static int lastEmptyLane = 1;
+    public static float lastTrapZ = 0f;
 
     void Start()
     {
@@ -15,16 +16,22 @@ public class PlatformTrap : MonoBehaviour
 
     IEnumerator SpawnRoutine()
     {
-        // Bắt đầu spawn ngay lập tức
         while (true)
         {
-            SpawnTrapsAndCoins();
 
-            yield return new WaitForSeconds(Random.Range(1.8f, 4f));
+            if (GameManger.Instance.isBossActive)
+            {
+                yield return null;
+                continue;
+            }
+            // -------------------------------
+
+            yield return StartCoroutine(SpawnTrapsThenCoins());
+            yield return new WaitForSeconds(Random.Range(1.5f, 2.3f));
         }
     }
 
-    void SpawnTrapsAndCoins()
+    IEnumerator SpawnTrapsThenCoins()
     {
         List<int> laneList = new List<int> { 0, 1, 2 };
 
@@ -34,29 +41,35 @@ public class PlatformTrap : MonoBehaviour
         int laneB = laneList[Random.Range(0, laneList.Count)];
         laneList.Remove(laneB);
 
-        // LANE TRỐNG LÀ laneList[0]
         int emptyLane = laneList[0];
 
-        // SPWAN TRAP 2 LANE
-        Vector3 posA = new Vector3(lanes[laneA], 0, transform.position.z);
-        PoolManager.Instance.Spawn(trapPrefab, posA, Quaternion.identity);
+        lastEmptyLane = emptyLane;
+        lastTrapZ = transform.position.z;
 
-        Vector3 posB = new Vector3(lanes[laneB], 0, transform.position.z);
-        PoolManager.Instance.Spawn(trapPrefab, posB, Quaternion.identity);
+        SpawnTrap(laneA);
+        SpawnTrap(laneB);
 
-        // SPAWN COIN VÀO LANE TRỐNG
-        SpawnCoinsInLane(emptyLane);
+        yield return null;
+
+        int chosenLane = (Random.value > 0.5f) ? laneA : laneB;
+        SpawnCoinsBehindTrap(chosenLane);
     }
 
-    void SpawnCoinsInLane(int laneIndex)
+    void SpawnTrap(int laneIndex)
+    {
+        Vector3 trapPos = new Vector3(lanes[laneIndex], 0f, transform.position.z);
+        GameManger.Instance.objectPool.GetTrap(trapPos, Quaternion.identity, null);
+    }
+
+    void SpawnCoinsBehindTrap(int laneIndex)
     {
         float laneX = lanes[laneIndex];
-        float baseZ = transform.position.z;
+        float trapZ = transform.position.z;
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 6; i++)
         {
-            Vector3 pos = new Vector3(laneX, 1f, baseZ + i * 2f);
-            PoolManager.Instance.Spawn(coinPrefab, pos, Quaternion.identity);
+            Vector3 pos = new Vector3(laneX, 1f, trapZ + i * 1.6f + 4.8f);
+            GameManger.Instance.objectPool.GetCoinMove(pos, Quaternion.identity, null);
         }
     }
 }

@@ -13,7 +13,7 @@ public class TrapMove : MonoBehaviour
 
         if (transform.position.z < despawnZ)
         {
-            PoolManager.Instance.Despawn(gameObject);
+            GameManger.Instance.objectPool.DestroyTrap(gameObject);
         }
     }
     private void OnTriggerEnter(Collider col)
@@ -26,12 +26,14 @@ public class TrapMove : MonoBehaviour
         }
         else if (col.CompareTag("Bullet"))
         {
-            GetComponent<TrapHitEffect>()?.PlayHitEffect();
-            PoolManager.Instance.Despawn(col.gameObject);
-            HpTrap -= 1f;
+            GetComponent<TrapHitVFX_Strong>()?.PlayHit();
+
+            GameManger.Instance.objectPool.DestroyBullet(col.gameObject);
+            HpTrap--;
             if (HpTrap <= 0f)
             {
-                PoolManager.Instance.Despawn(gameObject);
+                GameManger.Instance.objectPool.DestroyTrap(gameObject);
+                HpTrap = 10f;
             }
         }
     }
