@@ -16404,7 +16404,7 @@ Transform:
   m_Children:
   - {fileID: 4303570559691590}
   m_Father: {fileID: 4526748841980597}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0.11167383}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.0275207}
 --- !u!1 &1103144387293820
 GameObject:
   m_ObjectHideFlags: 0
@@ -16438,7 +16438,7 @@ Transform:
   - {fileID: 4076458110967551}
   - {fileID: 4209526743455983}
   m_Father: {fileID: 4425520028785935}
-  m_LocalEulerAnglesHint: {x: -90.00001, y: -49.527435, z: 179.92714}
+  m_LocalEulerAnglesHint: {x: 89.92598, y: 130.4253, z: 0}
 --- !u!1 &1128477679158269
 GameObject:
   m_ObjectHideFlags: 0
@@ -18817,7 +18817,7 @@ Transform:
   m_Children:
   - {fileID: 4425520028785935}
   m_Father: {fileID: 4303570559691590}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.81070524}
 --- !u!1 &1173743581401116
 GameObject:
   m_ObjectHideFlags: 0
@@ -18848,7 +18848,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4425520028785935}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1207557127313093
 GameObject:
   m_ObjectHideFlags: 0
@@ -21194,7 +21194,7 @@ Transform:
   m_Children:
   - {fileID: 4431549404916198}
   m_Father: {fileID: 4235842822782700}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1316367174626070
 GameObject:
   m_ObjectHideFlags: 0
@@ -35153,7 +35153,7 @@ Transform:
   m_Children:
   - {fileID: 4526748841980597}
   m_Father: {fileID: 4676195157689196}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.39067322}
 --- !u!1 &1442129545240426
 GameObject:
   m_ObjectHideFlags: 0
@@ -35187,7 +35187,7 @@ Transform:
   - {fileID: 4069444995151966}
   - {fileID: 4870826430399521}
   m_Father: {fileID: 4425520028785935}
-  m_LocalEulerAnglesHint: {x: -90, y: 49.423855, z: 179.92714}
+  m_LocalEulerAnglesHint: {x: 89.92867, y: -130.62355, z: 0}
 --- !u!1 &1444281744157381
 GameObject:
   m_ObjectHideFlags: 0
@@ -35219,7 +35219,7 @@ Transform:
   m_Children:
   - {fileID: 4280682462824571}
   m_Father: {fileID: 4238220068552107}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.1591355}
 --- !u!1 &1459885511884647
 GameObject:
   m_ObjectHideFlags: 0
@@ -42268,7 +42268,7 @@ Transform:
   m_Children:
   - {fileID: 4238220068552107}
   m_Father: {fileID: 4431549404916198}
-  m_LocalEulerAnglesHint: {x: 90, y: 0.153973, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -88.543106}
 --- !u!1 &1572811032655913
 GameObject:
   m_ObjectHideFlags: 0
@@ -51657,7 +51657,7 @@ Transform:
   m_Children:
   - {fileID: 4459443320747153}
   m_Father: {fileID: 4280682462824571}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.8167306}
 --- !u!1 &1661307318124565
 GameObject:
   m_ObjectHideFlags: 0
@@ -51688,7 +51688,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4097218921442661}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1737621581800601
 GameObject:
   m_ObjectHideFlags: 0
@@ -56365,7 +56365,7 @@ Transform:
   - {fileID: 4097218921442661}
   - {fileID: 4440221598976387}
   m_Father: {fileID: 4459443320747153}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0.33850658}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.38178563}
 --- !u!1 &1802184458612127
 GameObject:
   m_ObjectHideFlags: 0
@@ -58713,7 +58713,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4440221598976387}
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1846904749186056
 GameObject:
   m_ObjectHideFlags: 0
@@ -65696,7 +65696,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 49ec0b8202b3854499c2ad32c9149da3, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
